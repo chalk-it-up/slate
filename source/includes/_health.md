@@ -6,7 +6,7 @@ This endpoint is unique in that two methods are supported HEAD (preferred) and G
 No authentication header is required for this endpoint.
 
 ```shell
-http HEAD <%= config[:endpoint] %>/health "Authorization:Bearer $AUTH_TOKEN"
+http HEAD chalky.com/health
 ```
 
 ```javascript
@@ -15,10 +15,10 @@ TODO
 
 ### HTTP Request
 
-`HEAD <%= config[:endpoint] %>/health`
+`HEAD chalky.com/health`
 
 Returns HTTP status code 200 and no content
 
-`GET <%= config[:endpoint] %>/health`
+`GET chalky.com/health`
 
 Returns HTTP status code 200 and content `OK`

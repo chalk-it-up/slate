@@ -2,7 +2,7 @@
 This endpoint is used to register a new user on the system
  
 ```shell
-http POST <%= config[:endpoint] %>/register
+http POST chalky.com/register email=joe@soap.com password=secret first_name=Joe last_name=Soap user_type=V
 ```
 
 ```javascript
@@ -11,7 +11,7 @@ TODO
 
 ### HTTP Request
 
-`POST <%= config[:endpoint] %>/register`
+`POST chalky.com/register`
 
 ### Parameters
 
@@ -38,18 +38,16 @@ S | School
 
 ```json
 {
-    "data": {
-        "first_name": "Joe",
-        "last_name": "Soap",
-        "roles": [
-            "volunteer-owner",
-            "charity-view",
-            "school-list",
-            "everyone"
-        ],
-        "token": "eyJ0eXAi.....7sjnwj",
-        "user_id": 2325393376858483571,
-        "user_type": "V"
-    }
+    "first_name": "Joe",
+    "last_name": "Soap",
+    "roles": [
+        "volunteer-owner",
+        "charity-view",
+        "school-list",
+        "everyone"
+    ],
+    "token": "eyJ0eXAi.....7sjnwj",
+    "user_id": 2325393376858483571,
+    "user_type": "V"
 }
 ```

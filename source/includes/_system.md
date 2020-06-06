@@ -2,7 +2,7 @@
 This endpoint returns useful information pertaining to the system itself.
  
 ```shell
-http GET <%= config[:endpoint] %>/system
+http GET chalky.com/system
 ```
 
 ```javascript
@@ -11,7 +11,7 @@ TODO
 
 ### HTTP Request
 
-`GET <%= config[:endpoint] %>/system`
+`GET chalky.com/system`
 
 > The above command returns JSON structured like this:
 
