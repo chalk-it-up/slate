@@ -229,17 +229,6 @@
                     <a href="#authentication" class="toc-h2 toc-link" data-title="Authentication">Authentication</a>
                   </li>
                   <li>
-                    <a href="#health" class="toc-h2 toc-link" data-title="Health">Health</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#system" class="toc-h1 toc-link" data-title="System">System</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#http-request-2" class="toc-h2 toc-link" data-title="HTTP Request">HTTP Request</a>
-                  </li>
-                  <li>
                     <a href="#invalid-requests" class="toc-h2 toc-link" data-title="Invalid Requests">Invalid Requests</a>
                   </li>
                   <li>
@@ -271,70 +260,44 @@
 
 <p>Chalky API expects this authentication token to be present in the header of each request: </p>
 
-<p><code>Authorization:Bearer $AUTH_TOKEN</code></p>
+<p><code>Authorization: Bearer $AUTH_TOKEN</code></p>
 
 <aside class="notice">
 You must replace <code>$AUTH_TOKEN</code> with the token returned in the logon response message.
 </aside>
 
-<p>The exceptions to this are the Health, Logon and Register endpoints which require no header.</p>
-<h2 id='health'>Health</h2>
-<p>This endpoint returns the health of the system. Two methods are supported HEAD (preferred) and GET.</p>
-
-<p>No authorization is required for this endpoint.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http HEAD &lt;%<span class="o">=</span> config[:endpoint] %&gt;/health <span class="s2">"Authorization:Bearer </span><span class="nv">$AUTH_TOKEN</span><span class="s2">"</span>
-</code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>HEAD &lt;%= config[:endpoint] %&gt;/health</code></p>
-
-<p>Returns HTTP status code 200 and no content</p>
-
-<p><code>GET &lt;%= config[:endpoint] %&gt;/health</code></p>
-
-<p>Returns HTTP status code 200 and content <code>OK</code></p>
-<h1 id='system'>System</h1>
-<p>This endpoint returns useful information pertaining to the system itself.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET &lt;%<span class="o">=</span> config[:endpoint] %&gt;/system
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
-</code></pre></div><h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET &lt;%= config[:endpoint] %&gt;/system</code></p>
-
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"chalky_version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.1.10"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"java_version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11.0.6"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"process_start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-31T12:01:09.146Z"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div><h2 id='invalid-requests'>Invalid Requests</h2>
+<p>The exceptions to this are the Health, Logon and Register endpoints which require no authentication header.</p>
+<h2 id='invalid-requests'>Invalid Requests</h2>
 <p>If a request fails then the most common response would be something like the following:</p>
 
 <p>HTTP status code 400 - Bad Request</p>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
     </span><span class="nl">"error_message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Last name was not specified"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre></div><h2 id='health'>Health</h2>
+</span></code></pre></div>
+<p>A full list of the status codes used can be found under <code>Status Codes</code></p>
+<h2 id='health'>Health</h2>
 <p>This endpoint returns the health of the system.</p>
 
 <p>This endpoint is unique in that two methods are supported HEAD (preferred) and GET.</p>
 
 <p>No authentication header is required for this endpoint.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http HEAD &lt;%<span class="o">=</span> config[:endpoint] %&gt;/health <span class="s2">"Authorization:Bearer </span><span class="nv">$AUTH_TOKEN</span><span class="s2">"</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http HEAD chalky.com/health
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>HEAD &lt;%= config[:endpoint] %&gt;/health</code></p>
+<p><code>HEAD chalky.com/health</code></p>
 
 <p>Returns HTTP status code 200 and no content</p>
 
-<p><code>GET &lt;%= config[:endpoint] %&gt;/health</code></p>
+<p><code>GET chalky.com/health</code></p>
 
 <p>Returns HTTP status code 200 and content <code>OK</code></p>
 <h2 id='system'>System</h2>
 <p>This endpoint returns useful information pertaining to the system itself.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET &lt;%<span class="o">=</span> config[:endpoint] %&gt;/system
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET chalky.com/system
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>GET &lt;%= config[:endpoint] %&gt;/system</code></p>
+<p><code>GET chalky.com/system</code></p>
 
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
@@ -346,10 +309,10 @@ You must replace <code>$AUTH_TOKEN</code> with the token returned in the logon r
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div><h2 id='register'>Register</h2>
 <p>This endpoint is used to register a new user on the system</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http POST &lt;%<span class="o">=</span> config[:endpoint] %&gt;/register
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http POST chalky.com/register <span class="nv">email</span><span class="o">=</span>joe@soap.com <span class="nv">password</span><span class="o">=</span>secret <span class="nv">first_name</span><span class="o">=</span>Joe <span class="nv">last_name</span><span class="o">=</span>Soap <span class="nv">user_type</span><span class="o">=</span>V
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>POST &lt;%= config[:endpoint] %&gt;/register</code></p>
+<p><code>POST chalky.com/register</code></p>
 <h3 id='parameters'>Parameters</h3>
 <table><thead>
 <tr>
@@ -413,19 +376,17 @@ You must replace <code>$AUTH_TOKEN</code> with the token returned in the logon r
 <p>The above command returns JSON structured like this:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Joe"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Soap"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"roles"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-            </span><span class="s2">"volunteer-owner"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"charity-view"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"school-list"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"everyone"</span><span class="w">
-        </span><span class="p">],</span><span class="w">
-        </span><span class="nl">"token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eyJ0eXAi.....7sjnwj"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2325393376858483571</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"user_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"V"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
+    </span><span class="nl">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Joe"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Soap"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"roles"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"volunteer-owner"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"charity-view"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"school-list"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"everyone"</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eyJ0eXAi.....7sjnwj"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2325393376858483571</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"user_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"V"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div><h1 id='status-codes'>Status Codes</h1>
 <p>The Chalky API uses the following HTTP status codes:</p>
