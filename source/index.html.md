@@ -13,6 +13,7 @@ includes:
   - health
   - system
   - register
+  - login
   - status_codes
 
 search: true
