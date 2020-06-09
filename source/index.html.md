@@ -13,6 +13,10 @@ includes:
   - health
   - system
   - register
+  - general
+  - 0_user
+  - 1_user
+  - volunteer
   - status_codes
 
 search: true

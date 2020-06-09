@@ -1,4 +1,4 @@
-# Chalky API
+# Chalky API Introduction
 
 ## Introduction
 All shell commands use `HTTPie` instead of curl but you could use curl if you choose. Syntax will vary slightly.
