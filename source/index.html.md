@@ -13,6 +13,7 @@ includes:
   - health
   - system
   - register
+  - login
   - general
   - 0_user
   - 1_user
