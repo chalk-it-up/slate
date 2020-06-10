@@ -15,8 +15,8 @@ includes:
   - register
   - login
   - general
-  - 0_user
-  - 1_user
+  - user/0_user
+  - user/1_user
   - volunteer
   - status_codes
 
