@@ -4,10 +4,10 @@
 <ul>
 <li>Do we flatten details between user and volunteer</li>
 </ul>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http PUT chalky.com/api/volunteers/:id
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http PUT example.com/api/volunteers/:id
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>PUT chalky.com/api/volunteers/2327833979673121796</code></p>
+<p><code>PUT example.com/api/volunteers/2327833979673121796</code></p>
 <h3 id='parameters'>Parameters</h3>
 <table><thead>
 <tr>

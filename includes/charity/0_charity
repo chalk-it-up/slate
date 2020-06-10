@@ -1,9 +1,9 @@
 <h1 id='charity'>Charity</h1><h2 id='get-all-charities'>Get All Charities</h2>
 <p>This endpoint returns a list of all charities.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET chalky.com/api/charities
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/charities
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>GET chalky.com/api/charities</code></p>
+<p><code>GET example.com/api/charities</code></p>
 
 <blockquote>
 <p>The above command returns JSON structured like this:</p>

@@ -308,7 +308,7 @@
           </li>
       </ul>
         <ul class="toc-footer">
-            <li><a href='https://chalky-api.submicro.net'>Chalky API</a></li>
+            <li><a href='https://example.com/some-api'>Chalky API</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
@@ -343,22 +343,22 @@ You must replace <code>$AUTH_TOKEN</code> with the token returned in the logon r
 <p>This endpoint is unique in that two methods are supported HEAD (preferred) and GET.</p>
 
 <p>No authentication header is required for this endpoint.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http HEAD chalky.com/health
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http HEAD example.com/health
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>HEAD chalky.com/health</code></p>
+<p><code>HEAD example.com/health</code></p>
 
 <p>Returns HTTP status code 200 and no content</p>
 
-<p><code>GET chalky.com/health</code></p>
+<p><code>GET example.com/health</code></p>
 
 <p>Returns HTTP status code 200 and content <code>OK</code></p>
 <h2 id='system'>System</h2>
 <p>This endpoint returns useful information pertaining to the system itself.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET chalky.com/system
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/system
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>GET chalky.com/system</code></p>
+<p><code>GET example.com/system</code></p>
 
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
@@ -370,10 +370,10 @@ You must replace <code>$AUTH_TOKEN</code> with the token returned in the logon r
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div><h2 id='register'>Register</h2>
 <p>This endpoint is used to register a new user on the system</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http POST chalky.com/register <span class="nv">email</span><span class="o">=</span>joe@soap.com <span class="nv">password</span><span class="o">=</span>secret <span class="nv">first_name</span><span class="o">=</span>Joe <span class="nv">last_name</span><span class="o">=</span>Soap <span class="nv">user_type</span><span class="o">=</span>V
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http POST example.com/register <span class="nv">email</span><span class="o">=</span>joe@soap.com <span class="nv">password</span><span class="o">=</span>secret <span class="nv">first_name</span><span class="o">=</span>Joe <span class="nv">last_name</span><span class="o">=</span>Soap <span class="nv">user_type</span><span class="o">=</span>V
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>POST chalky.com/register</code></p>
+<p><code>POST example.com/register</code></p>
 <h3 id='parameters'>Parameters</h3>
 <table><thead>
 <tr>
@@ -451,10 +451,10 @@ You must replace <code>$AUTH_TOKEN</code> with the token returned in the logon r
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div><h2 id='login'>Login</h2>
 <p>This endpoint is used to login to the Chalky API system</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http POST chalky.com/login <span class="nv">email</span><span class="o">=</span>joe@soap.com <span class="nv">password</span><span class="o">=</span>secret
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http POST example.com/login <span class="nv">email</span><span class="o">=</span>joe@soap.com <span class="nv">password</span><span class="o">=</span>secret
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>POST chalky.com/login</code></p>
+<p><code>POST example.com/login</code></p>
 <h3 id='parameters'>Parameters</h3>
 <table><thead>
 <tr>
@@ -487,10 +487,10 @@ You must replace <code>$AUTH_TOKEN</code> with the token returned in the logon r
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div><h1 id='general'>General</h1><h2 id='categories'>Categories</h2>
 <p>This endpoint returns a list of categories.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET chalky.com/api/categories
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/categories
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>GET chalky.com/api/categories</code></p>
+<p><code>GET example.com/api/categories</code></p>
 
 <blockquote>
 <p>The above command returns JSON structured like this (TODO):</p>
@@ -507,10 +507,10 @@ You must replace <code>$AUTH_TOKEN</code> with the token returned in the logon r
 </span><span class="p">]</span><span class="w">
 </span></code></pre></div><h2 id='provinces'>Provinces</h2>
 <p>This endpoint returns a list of provinces.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET chalky.com/api/provinces
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/provinces
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET chalky.com/api/provinces</code></p>
+<p><code>GET example.com/api/provinces</code></p>
 
 <blockquote>
 <p>The above command returns JSON structured like this (TODO):</p>
@@ -531,17 +531,17 @@ You must replace <code>$AUTH_TOKEN</code> with the token returned in the logon r
 </span><span class="p">]</span><span class="w">
 </span></code></pre></div><h1 id='user'>User</h1><h2 id='user-details'>User Details</h2>
 <p>This endpoint returns useful information pertaining to the user currently logged in.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET chalky.com/api/user
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/user
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>GET chalky.com/api/user</code></p>
+<p><code>GET example.com/api/user</code></p>
 
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
     </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2129666729394050204</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"chalky@submicro.net"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"chalky@example.com"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Admin"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Account"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"time_created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-06-09T18:17:36.641"</span><span class="p">,</span><span class="w">
@@ -549,10 +549,10 @@ You must replace <code>$AUTH_TOKEN</code> with the token returned in the logon r
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div><h2 id='update-user-details'>Update User Details</h2>
 <p>This endpoint allows a user to update common details.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http PUT chalky.com/api/user/:id
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http PUT example.com/api/user/:id
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>PUT chalky.com/api/user/:id</code></p>
+<p><code>PUT example.com/api/user/:id</code></p>
 <h3 id='parameters'>Parameters</h3>
 <table><thead>
 <tr>
@@ -580,10 +580,10 @@ You must replace <code>$AUTH_TOKEN</code> with the token returned in the logon r
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{}</span><span class="w">
 </span></code></pre></div><h1 id='charity'>Charity</h1><h2 id='get-all-charities'>Get All Charities</h2>
 <p>This endpoint returns a list of all charities.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET chalky.com/api/charities
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/charities
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>GET chalky.com/api/charities</code></p>
+<p><code>GET example.com/api/charities</code></p>
 
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
@@ -630,10 +630,10 @@ You must replace <code>$AUTH_TOKEN</code> with the token returned in the logon r
 </span><span class="p">]</span><span class="w">
 </span></code></pre></div><h2 id='get-one-charity'>Get One Charity</h2>
 <p>This endpoint returns the details for a single charity.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET chalky.com/api/charities/:id
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/charities/:id
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>GET chalky.com/api/charities/2327833979673121796</code></p>
+<p><code>GET example.com/api/charities/2327833979673121796</code></p>
 
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
@@ -664,10 +664,10 @@ You must replace <code>$AUTH_TOKEN</code> with the token returned in the logon r
 <li>Normalise charity contacts</li>
 <li>Add extra fields for social media (which ones? facebook, instagram, twitter? other?) </li>
 </ul>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http PUT chalky.com/api/charities/:id
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http PUT example.com/api/charities/:id
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>PUT chalky.com/api/charities/2327833979673121796</code></p>
+<p><code>PUT example.com/api/charities/2327833979673121796</code></p>
 <h3 id='parameters'>Parameters</h3>
 <table><thead>
 <tr>
@@ -740,10 +740,10 @@ You must replace <code>$AUTH_TOKEN</code> with the token returned in the logon r
 <p>This endpoint returns a list of all schools.</p>
 
 <p>This needs improvement and contacts normalised.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET chalky.com/api/schools
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/schools
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>GET chalky.com/api/schools</code></p>
+<p><code>GET example.com/api/schools</code></p>
 
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
@@ -775,10 +775,10 @@ You must replace <code>$AUTH_TOKEN</code> with the token returned in the logon r
 <p>This endpoint returns the details for a selected school.</p>
 
 <p>This needs improvement and contacts normalised.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET chalky.com/api/schools/:id
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/schools/:id
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>GET chalky.com/api/schools/2076815814010344533</code></p>
+<p><code>GET example.com/api/schools/2076815814010344533</code></p>
 
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
@@ -792,10 +792,10 @@ You must replace <code>$AUTH_TOKEN</code> with the token returned in the logon r
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div><h1 id='volunteer'>Volunteer</h1><h2 id='get-volunteer-details'>Get Volunteer Details</h2>
 <p>This endpoint returns the details for a single volunteer.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET chalky.com/api/volunteers/:id
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/volunteers/:id
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>GET chalky.com/api/volunteers/</code></p>
+<p><code>GET example.com/api/volunteers/</code></p>
 
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
@@ -814,10 +814,10 @@ You must replace <code>$AUTH_TOKEN</code> with the token returned in the logon r
 <ul>
 <li>Do we flatten details between user and volunteer</li>
 </ul>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http PUT chalky.com/api/volunteers/:id
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http PUT example.com/api/volunteers/:id
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>PUT chalky.com/api/volunteers/2327833979673121796</code></p>
+<p><code>PUT example.com/api/volunteers/2327833979673121796</code></p>
 <h3 id='parameters'>Parameters</h3>
 <table><thead>
 <tr>
