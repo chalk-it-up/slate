@@ -17,7 +17,13 @@ includes:
   - general
   - user/0_user
   - user/1_user
-  - volunteer
+  - charity/0_charity
+  - charity/1_charity
+  - charity/2_charity
+  - school/0_school
+  - school/1_school
+  - volunteer/0_volunteer
+  - volunteer/2_volunteer
   - status_codes
 
 search: true
