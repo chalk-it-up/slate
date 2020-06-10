@@ -24,5 +24,6 @@ last_name | The new last name, or surname, of the user
 > The above command returns JSON structured like this:
 
 ```json
-TBA```
+{}
+```
 
