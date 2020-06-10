@@ -2,7 +2,7 @@
 This endpoint returns useful information pertaining to the system itself.
  
 ```shell
-http GET chalky.com/system
+http GET example.com/system
 ```
 
 ```javascript
@@ -11,7 +11,7 @@ TODO
 
 ### HTTP Request
 
-`GET chalky.com/system`
+`GET example.com/system`
 
 > The above command returns JSON structured like this:
 

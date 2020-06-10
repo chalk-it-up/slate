@@ -63,5 +63,5 @@ helpers do
 end
 
 # Global Variables
-set :url, 'https://api.chalky.com'
+set :url, 'https://api.example.com'
 config[:url]

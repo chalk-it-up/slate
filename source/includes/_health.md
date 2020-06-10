@@ -6,7 +6,7 @@ This endpoint is unique in that two methods are supported HEAD (preferred) and G
 No authentication header is required for this endpoint.
 
 ```shell
-http HEAD chalky.com/health
+http HEAD example.com/health
 ```
 
 ```javascript
@@ -15,10 +15,10 @@ TODO
 
 ### HTTP Request
 
-`HEAD chalky.com/health`
+`HEAD example.com/health`
 
 Returns HTTP status code 200 and no content
 
-`GET chalky.com/health`
+`GET example.com/health`
 
 Returns HTTP status code 200 and content `OK`

@@ -4,7 +4,7 @@ This endpoint returns the details for a selected school.
 This needs improvement and contacts normalised.
  
 ```shell
-http GET chalky.com/api/schools/:id
+http GET example.com/api/schools/:id
 ```
 
 ```javascript
@@ -13,7 +13,7 @@ TODO
 
 ### HTTP Request
 
-`GET chalky.com/api/schools/2076815814010344533`
+`GET example.com/api/schools/2076815814010344533`
 
 > The above command returns JSON structured like this:
 

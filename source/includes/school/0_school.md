@@ -6,7 +6,7 @@ This endpoint returns a list of all schools.
 This needs improvement and contacts normalised.
  
 ```shell
-http GET chalky.com/api/schools
+http GET example.com/api/schools
 ```
 
 ```javascript
@@ -15,7 +15,7 @@ TODO
 
 ### HTTP Request
 
-`GET chalky.com/api/schools`
+`GET example.com/api/schools`
 
 > The above command returns JSON structured like this:
 

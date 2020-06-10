@@ -4,7 +4,7 @@
 This endpoint returns a list of categories.
  
 ```shell
-http GET chalky.com/api/categories
+http GET example.com/api/categories
 ```
 
 ```javascript
@@ -13,7 +13,7 @@ TODO
 
 ### HTTP Request
 
-`GET chalky.com/api/categories`
+`GET example.com/api/categories`
 
 > The above command returns JSON structured like this (TODO):
 
@@ -34,7 +34,7 @@ TODO
 This endpoint returns a list of provinces.
  
 ```shell
-http GET chalky.com/api/provinces
+http GET example.com/api/provinces
 ```
 
 ```javascript
@@ -43,7 +43,7 @@ TODO
 
 ### HTTP Request
 
-`GET chalky.com/api/provinces`
+`GET example.com/api/provinces`
 
 > The above command returns JSON structured like this (TODO):
 

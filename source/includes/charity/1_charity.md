@@ -2,7 +2,7 @@
 This endpoint returns the details for a single charity.
  
 ```shell
-http GET chalky.com/api/charities/:id
+http GET example.com/api/charities/:id
 ```
 
 ```javascript
@@ -11,7 +11,7 @@ TODO
 
 ### HTTP Request
 
-`GET chalky.com/api/charities/2327833979673121796`
+`GET example.com/api/charities/2327833979673121796`
 
 > The above command returns JSON structured like this:
 

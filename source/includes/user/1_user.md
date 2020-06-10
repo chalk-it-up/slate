@@ -2,7 +2,7 @@
 This endpoint allows a user to update common details.
  
 ```shell
-http PUT chalky.com/api/user/:id
+http PUT example.com/api/user/:id
 ```
 
 ```javascript
@@ -11,7 +11,7 @@ TODO
 
 ### HTTP Request
 
-`PUT chalky.com/api/user/:id`
+`PUT example.com/api/user/:id`
 
 ### Parameters
 

@@ -2,7 +2,7 @@
 This endpoint is used to login to the Chalky API system
  
 ```shell
-http POST chalky.com/login email=joe@soap.com password=secret
+http POST example.com/login email=joe@soap.com password=secret
 ```
 
 ```javascript
@@ -11,7 +11,7 @@ TODO
 
 ### HTTP Request
 
-`POST chalky.com/login`
+`POST example.com/login`
 
 ### Parameters
 

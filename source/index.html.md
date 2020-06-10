@@ -6,7 +6,7 @@ language_tabs:
   - javascript
 
 toc_footers:
-  - <a href='https://chalky-api.submicro.net'>Chalky API</a>
+  - <a href='https://example.com/some-api'>Chalky API</a>
 
 includes:
   - intro

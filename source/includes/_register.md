@@ -2,7 +2,7 @@
 This endpoint is used to register a new user on the system
  
 ```shell
-http POST chalky.com/register email=joe@soap.com password=secret first_name=Joe last_name=Soap user_type=V
+http POST example.com/register email=joe@soap.com password=secret first_name=Joe last_name=Soap user_type=V
 ```
 
 ```javascript
@@ -11,7 +11,7 @@ TODO
 
 ### HTTP Request
 
-`POST chalky.com/register`
+`POST example.com/register`
 
 ### Parameters
 

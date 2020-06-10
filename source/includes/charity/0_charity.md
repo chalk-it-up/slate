@@ -4,7 +4,7 @@
 This endpoint returns a list of all charities.
  
 ```shell
-http GET chalky.com/api/charities
+http GET example.com/api/charities
 ```
 
 ```javascript
@@ -13,7 +13,7 @@ TODO
 
 ### HTTP Request
 
-`GET chalky.com/api/charities`
+`GET example.com/api/charities`
 
 > The above command returns JSON structured like this:
 

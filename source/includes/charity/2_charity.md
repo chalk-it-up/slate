@@ -6,7 +6,7 @@ This endpoint is used to update the details of a charity.
 - Add extra fields for social media (which ones? facebook, instagram, twitter? other?) 
  
 ```shell
-http PUT chalky.com/api/charities/:id
+http PUT example.com/api/charities/:id
 ```
 
 ```javascript
@@ -15,7 +15,7 @@ TODO
 
 ### HTTP Request
 
-`PUT chalky.com/api/charities/2327833979673121796`
+`PUT example.com/api/charities/2327833979673121796`
 
 ### Parameters
 

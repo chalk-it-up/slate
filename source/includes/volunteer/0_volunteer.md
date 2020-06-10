@@ -4,7 +4,7 @@
 This endpoint returns the details for a single volunteer.
  
 ```shell
-http GET chalky.com/api/volunteers/:id
+http GET example.com/api/volunteers/:id
 ```
 
 ```javascript
@@ -13,7 +13,7 @@ TODO
 
 ### HTTP Request
 
-`GET chalky.com/api/volunteers/`
+`GET example.com/api/volunteers/`
 
 > The above command returns JSON structured like this:
 

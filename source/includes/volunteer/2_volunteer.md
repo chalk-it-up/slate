@@ -5,7 +5,7 @@ This endpoint is used to update the details of a volunteer.
 - Do we flatten details between user and volunteer
  
 ```shell
-http PUT chalky.com/api/volunteers/:id
+http PUT example.com/api/volunteers/:id
 ```
 
 ```javascript
@@ -14,7 +14,7 @@ TODO
 
 ### HTTP Request
 
-`PUT chalky.com/api/volunteers/2327833979673121796`
+`PUT example.com/api/volunteers/2327833979673121796`
 
 ### Parameters
 
