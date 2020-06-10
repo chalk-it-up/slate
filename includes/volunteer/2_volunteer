@@ -1,0 +1,38 @@
+<h2 id='update-volunteer-details'>Update Volunteer Details</h2>
+<p>This endpoint is used to update the details of a volunteer.</p>
+<h3 id='todo'>TODO</h3>
+<ul>
+<li>Do we flatten details between user and volunteer</li>
+</ul>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http PUT chalky.com/api/volunteers/:id
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p><code>PUT chalky.com/api/volunteers/2327833979673121796</code></p>
+<h3 id='parameters'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>volunteer_id</td>
+<td>The id of the volunteer to change</td>
+</tr>
+<tr>
+<td>mobile</td>
+<td>The mobile number</td>
+</tr>
+<tr>
+<td>gender</td>
+<td>M or F (no binary here)</td>
+</tr>
+<tr>
+<td>date_of_birth</td>
+<td>YYYYMMDD</td>
+</tr>
+<tr>
+<td>school_id</td>
+<td>The id of the school from the provided list of schools</td>
+</tr>
+</tbody></table>

@@ -1,0 +1,19 @@
+<h1 id='volunteer'>Volunteer</h1><h2 id='get-volunteer-details'>Get Volunteer Details</h2>
+<p>This endpoint returns the details for a single volunteer.</p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET chalky.com/api/volunteers/:id
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p><code>GET chalky.com/api/volunteers/</code></p>
+
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"date_of_birth"</span><span class="p">:</span><span class="w"> </span><span class="s2">"20040401"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"gender"</span><span class="p">:</span><span class="w"> </span><span class="s2">"M"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"mobile"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0801112222"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"school_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2076815813976790099</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"school_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"St Stithians Boys' College"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"volunteer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2129666729536656541</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>

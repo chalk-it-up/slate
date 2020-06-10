@@ -268,7 +268,40 @@
               </ul>
           </li>
           <li>
+            <a href="#charity" class="toc-h1 toc-link" data-title="Charity">Charity</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-all-charities" class="toc-h2 toc-link" data-title="Get All Charities">Get All Charities</a>
+                  </li>
+                  <li>
+                    <a href="#get-one-charity" class="toc-h2 toc-link" data-title="Get One Charity">Get One Charity</a>
+                  </li>
+                  <li>
+                    <a href="#update-charity-details" class="toc-h2 toc-link" data-title="Update Charity Details">Update Charity Details</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#school" class="toc-h1 toc-link" data-title="School">School</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-all-schools" class="toc-h2 toc-link" data-title="Get All Schools">Get All Schools</a>
+                  </li>
+                  <li>
+                    <a href="#get-one-school" class="toc-h2 toc-link" data-title="Get One School">Get One School</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
             <a href="#volunteer" class="toc-h1 toc-link" data-title="Volunteer">Volunteer</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-volunteer-details" class="toc-h2 toc-link" data-title="Get Volunteer Details">Get Volunteer Details</a>
+                  </li>
+                  <li>
+                    <a href="#update-volunteer-details" class="toc-h2 toc-link" data-title="Update Volunteer Details">Update Volunteer Details</a>
+                  </li>
+              </ul>
           </li>
           <li>
             <a href="#status-codes" class="toc-h1 toc-link" data-title="Status Codes">Status Codes</a>
@@ -545,7 +578,275 @@ You must replace <code>$AUTH_TOKEN</code> with the token returned in the logon r
 <p>The above command returns JSON structured like this:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{}</span><span class="w">
-</span></code></pre></div><h1 id='volunteer'>Volunteer</h1><h1 id='status-codes'>Status Codes</h1>
+</span></code></pre></div><h1 id='charity'>Charity</h1><h2 id='get-all-charities'>Get All Charities</h2>
+<p>This endpoint returns a list of all charities.</p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET chalky.com/api/charities
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p><code>GET chalky.com/api/charities</code></p>
+
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Animals"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"category_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"charity_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2327833979673121796</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Johannesburg"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"contact"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"info@arkanimalcentre.co.za"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"gps_latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"S25° 59’03.3"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"gps_longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"E027°56’45.5"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"mobile"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ark Animal Centre – Puppy Shelter"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"province"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Gauteng"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"province_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"930053318"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"street"</span><span class="p">:</span><span class="w"> </span><span class="s2">"17 Howard Avenue"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"suburb"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Chartwell"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"telephone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"087 742 2211"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"website"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.arkanimalcentre.co.za/"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Children and Youth"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"category_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"charity_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2327833979631178753</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sandton"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"contact"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"info@heartsofhope.org.za"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"gps_latitude"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"gps_longitude"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"mobile"</span><span class="p">:</span><span class="w"> </span><span class="s2">"082 458 2677"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hearts of Hope"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"province"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Gauteng"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"province_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"registration_number"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"street"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"suburb"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"telephone"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"website"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://heartsofhope.org.za/"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div><h2 id='get-one-charity'>Get One Charity</h2>
+<p>This endpoint returns the details for a single charity.</p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET chalky.com/api/charities/:id
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p><code>GET chalky.com/api/charities/2327833979673121796</code></p>
+
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Animals"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"category_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"charity_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2327833979673121796</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Johannesburg"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"contact"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"info@arkanimalcentre.co.za"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"gps_latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"S25° 59’03.3"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"gps_longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"E027°56’45.5"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"mobile"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ark Animal Centre – Puppy Shelter"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"province"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Gauteng"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"province_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"930053318"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"street"</span><span class="p">:</span><span class="w"> </span><span class="s2">"17 Howard Avenue"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"suburb"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Chartwell"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"telephone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"087 742 2211"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"website"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.arkanimalcentre.co.za/"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h2 id='update-charity-details'>Update Charity Details</h2>
+<p>This endpoint is used to update the details of a charity.</p>
+<h3 id='todo'>TODO</h3>
+<ul>
+<li>Normalise charity contacts</li>
+<li>Add extra fields for social media (which ones? facebook, instagram, twitter? other?) </li>
+</ul>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http PUT chalky.com/api/charities/:id
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p><code>PUT chalky.com/api/charities/2327833979673121796</code></p>
+<h3 id='parameters'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>The id of the charity to change</td>
+</tr>
+<tr>
+<td>name</td>
+<td>The name of the charity</td>
+</tr>
+<tr>
+<td>category_id</td>
+<td>The category_id of the charity</td>
+</tr>
+<tr>
+<td>street</td>
+<td>The street number and name</td>
+</tr>
+<tr>
+<td>suburb</td>
+<td>The name of the suburb</td>
+</tr>
+<tr>
+<td>city</td>
+<td>The name of the city</td>
+</tr>
+<tr>
+<td>province_id</td>
+<td>The id from the list of suburbs</td>
+</tr>
+<tr>
+<td>contact</td>
+<td>The primary contact (should normalise contacts here too)</td>
+</tr>
+<tr>
+<td>email</td>
+<td>The general email</td>
+</tr>
+<tr>
+<td>mobile</td>
+<td>The mobile number of contact (should normalise contacts here too)</td>
+</tr>
+<tr>
+<td>telephone</td>
+<td>The main telephone number</td>
+</tr>
+<tr>
+<td>website</td>
+<td>The website of the charity</td>
+</tr>
+<tr>
+<td>registration_number</td>
+<td>the NGO or similar (need verification)</td>
+</tr>
+<tr>
+<td>gps_latitude</td>
+<td>Used for exact location</td>
+</tr>
+<tr>
+<td>gps_longitude</td>
+<td>Used for exact location (do we combine to one field?)</td>
+</tr>
+</tbody></table>
+<h1 id='school'>School</h1><h2 id='get-all-schools'>Get All Schools</h2>
+<p>This endpoint returns a list of all schools.</p>
+
+<p>This needs improvement and contacts normalised.</p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET chalky.com/api/schools
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p><code>GET chalky.com/api/schools</code></p>
+
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"contact"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"contact_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"contact_phone"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2076815814010344533</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Saint Peter's College"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"contact"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"contact_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"contact_phone"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2076815813976790099</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"St Stithians Boys' College"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"contact"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"contact_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"contact_phone"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2076815814001955924</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"St Stithians Girls' College"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div><h2 id='get-one-school'>Get One School</h2>
+<p>This endpoint returns the details for a selected school.</p>
+
+<p>This needs improvement and contacts normalised.</p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET chalky.com/api/schools/:id
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p><code>GET chalky.com/api/schools/2076815814010344533</code></p>
+
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"contact"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"contact_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"contact_phone"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2076815814010344533</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Saint Peter's College"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h1 id='volunteer'>Volunteer</h1><h2 id='get-volunteer-details'>Get Volunteer Details</h2>
+<p>This endpoint returns the details for a single volunteer.</p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET chalky.com/api/volunteers/:id
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p><code>GET chalky.com/api/volunteers/</code></p>
+
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"date_of_birth"</span><span class="p">:</span><span class="w"> </span><span class="s2">"20040401"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"gender"</span><span class="p">:</span><span class="w"> </span><span class="s2">"M"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"mobile"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0801112222"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"school_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2076815813976790099</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"school_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"St Stithians Boys' College"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"volunteer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2129666729536656541</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h2 id='update-volunteer-details'>Update Volunteer Details</h2>
+<p>This endpoint is used to update the details of a volunteer.</p>
+<h3 id='todo'>TODO</h3>
+<ul>
+<li>Do we flatten details between user and volunteer</li>
+</ul>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http PUT chalky.com/api/volunteers/:id
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p><code>PUT chalky.com/api/volunteers/2327833979673121796</code></p>
+<h3 id='parameters'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>volunteer_id</td>
+<td>The id of the volunteer to change</td>
+</tr>
+<tr>
+<td>mobile</td>
+<td>The mobile number</td>
+</tr>
+<tr>
+<td>gender</td>
+<td>M or F (no binary here)</td>
+</tr>
+<tr>
+<td>date_of_birth</td>
+<td>YYYYMMDD</td>
+</tr>
+<tr>
+<td>school_id</td>
+<td>The id of the school from the provided list of schools</td>
+</tr>
+</tbody></table>
+<h1 id='status-codes'>Status Codes</h1>
 <p>The Chalky API uses the following HTTP status codes:</p>
 
 <table><thead>
