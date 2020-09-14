@@ -243,6 +243,12 @@
                   <li>
                     <a href="#login" class="toc-h2 toc-link" data-title="Login">Login</a>
                   </li>
+                  <li>
+                    <a href="#reset-password-link-request" class="toc-h2 toc-link" data-title="Reset Password Link Request">Reset Password Link Request</a>
+                  </li>
+                  <li>
+                    <a href="#reset-password" class="toc-h2 toc-link" data-title="Reset Password">Reset Password</a>
+                  </li>
               </ul>
           </li>
           <li>
@@ -333,7 +339,8 @@ You must replace <code>$AUTH_TOKEN</code> with the token returned in the logon r
 
 <p>HTTP status code 400 - Bad Request</p>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"error_message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Last name was not specified"</span><span class="w">
+  </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Last name was not specified"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 <p>A full list of the status codes used can be found under <code>Status Codes</code></p>
@@ -370,11 +377,76 @@ You must replace <code>$AUTH_TOKEN</code> with the token returned in the logon r
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div><h2 id='register'>Register</h2>
 <p>This endpoint is used to register a new user on the system</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http POST example.com/register <span class="nv">email</span><span class="o">=</span>joe@soap.com <span class="nv">password</span><span class="o">=</span>secret <span class="nv">first_name</span><span class="o">=</span>Joe <span class="nv">last_name</span><span class="o">=</span>Soap <span class="nv">user_type</span><span class="o">=</span>V
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http POST example.com/register <span class="nv">email</span><span class="o">=</span>joe@soap.com <span class="nv">password</span><span class="o">=</span>secret <span class="nv">user_type</span><span class="o">=</span>C
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
 <p><code>POST example.com/register</code></p>
 <h3 id='parameters'>Parameters</h3>
+<p>The register handler works in two different modes depending on whether the user is a student or an adult.</p>
+<h3 id='user-type'>User Type</h3>
+<p>The possible values for <code>user_type</code> can be:</p>
+
+<table><thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>A</td>
+<td>Administrator</td>
+</tr>
+<tr>
+<td>S</td>
+<td>Student</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Charity</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Parent or Guardian</td>
+</tr>
+<tr>
+<td>T</td>
+<td>Teacher</td>
+</tr>
+</tbody></table>
+
+<p><strong>(Student)</strong>
+When a student registers an email is sent to the student&#39;s parent to complete the registration process.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>first_name</td>
+<td>The first name of student that is registering</td>
+</tr>
+<tr>
+<td>parent_email</td>
+<td>The email address of the studen&#39;t parent</td>
+</tr>
+<tr>
+<td>user_type</td>
+<td>The type of user registering (must be <code>S</code>)</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"An email has been sent to the parent email address provided"</span><span class="w"> 
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p><strong>(Adult)</strong></p>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -390,46 +462,8 @@ You must replace <code>$AUTH_TOKEN</code> with the token returned in the logon r
 <td>The password to be used for the new user</td>
 </tr>
 <tr>
-<td>first_name</td>
-<td>The first name of the new user</td>
-</tr>
-<tr>
-<td>last_name</td>
-<td>The last name, or surname, of the new user</td>
-</tr>
-<tr>
 <td>user_type</td>
-<td>The type of user registering</td>
-</tr>
-</tbody></table>
-<h3 id='user-type'>User Type</h3>
-<p>The possible values for <code>user_type</code> can be:</p>
-
-<table><thead>
-<tr>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>A</td>
-<td>Administrator</td>
-</tr>
-<tr>
-<td>V</td>
-<td>Volunteer</td>
-</tr>
-<tr>
-<td>C</td>
-<td>Charity</td>
-</tr>
-<tr>
-<td>P</td>
-<td>Parent or Guardian</td>
-</tr>
-<tr>
-<td>S</td>
-<td>School</td>
+<td>The type of user registering (must be <code>C</code>, <code>P</code> or <code>T</code>)</td>
 </tr>
 </tbody></table>
 
@@ -437,17 +471,32 @@ You must replace <code>$AUTH_TOKEN</code> with the token returned in the logon r
 <p>The above command returns JSON structured like this:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Joe"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Soap"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2325393376858483571</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eyJ0eXAi.....7sjnwj"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"user_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"P"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"roles"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="s2">"volunteer-owner"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"charity-view"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"school-list"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"everyone"</span><span class="w">
-    </span><span class="p">],</span><span class="w">
-    </span><span class="nl">"token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eyJ0eXAi.....7sjnwj"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2325393376858483571</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"user_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"V"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>In the event of a problem, the following JSON would be returned</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Registration failed"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"field"</span><span class="p">:</span><span class="w"> </span><span class="s2">"email"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The email address is not a valid format"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div><h2 id='login'>Login</h2>
 <p>This endpoint is used to login to the Chalky API system</p>
@@ -476,14 +525,74 @@ You must replace <code>$AUTH_TOKEN</code> with the token returned in the logon r
 <p>The above command returns JSON structured like this:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">272466682903204</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Joe"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Soap"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"user_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"V"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"permissions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="s2">"charity-view"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"event-view"</span><span class="w">
-  </span><span class="p">]</span><span class="w">
+  </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">272466682903204</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eyJ0eXAi.....7sjnwj"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"user_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"S"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"permissions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"charity-view"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"event-view"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h2 id='reset-password-link-request'>Reset Password Link Request</h2>
+<p>The reset password functionality comprises two stages. The first stage is the requesting of the password reset link.
+ The link is emailed to the user if the provided email address is valid.</p>
+
+<p>A status of success true will be returned irrespective of whether the email is valid or not. </p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/reset_password_request <span class="nv">email</span><span class="o">=</span>joe@soap.com
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p><code>GET example.com/reset_password_request</code></p>
+<h3 id='parameters'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>email</td>
+<td>The email address of the user</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h2 id='reset-password'>Reset Password</h2>
+<p>The second stage is invoked when the password reset link is clicked and the new details have been submitted.</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>POST example.com/reset_password</code></p>
+<h3 id='parameters'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>token</td>
+<td>The token provided by the password reset request</td>
+</tr>
+<tr>
+<td>new_password</td>
+<td>The new password requested by the user</td>
+</tr>
+</tbody></table>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http POST example.com/reset_password <span class="nv">token</span><span class="o">=</span>joe@soap.com <span class="nv">new_password</span><span class="o">=</span>Secret44
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"messaage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The password has been reset"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div><h1 id='general'>General</h1><h2 id='categories'>Categories</h2>
 <p>This endpoint returns a list of categories.</p>
