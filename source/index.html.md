@@ -14,6 +14,8 @@ includes:
   - system
   - register
   - login
+  - reset_request
+  - reset_password
   - general
   - user/0_user
   - user/1_user

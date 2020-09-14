@@ -23,7 +23,8 @@ HTTP status code 400 - Bad Request
 
 ```json
 {
-    "error_message": "Last name was not specified"
+  "success": false,
+  "message": "Last name was not specified"
 }
 ```
 

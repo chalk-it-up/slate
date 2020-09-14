@@ -24,13 +24,15 @@ password | The password for the user
 
 ```json
 {
-  "user_id": 272466682903204,
-  "first_name": "Joe",
-  "last_name": "Soap",
-  "user_type": "V",
-  "permissions": [
-    "charity-view",
-    "event-view"
-  ]
+  "success": true,
+  "data": {
+      "user_id": 272466682903204,
+      "token": "eyJ0eXAi.....7sjnwj",
+      "user_type": "S",
+      "permissions": [
+        "charity-view",
+        "event-view"
+      ]
+  }
 }
 ```
