@@ -28,7 +28,11 @@ password | The password for the user
   "data": {
       "user_id": 272466682903204,
       "token": "eyJ0eXAi.....7sjnwj",
-      "user_type": "S",
+      "first_name": "Joe",
+      "last_name": "Soap",
+      "email_confirmed": true,
+      "profile_complete": false,
+      "user_type": "P",
       "permissions": [
         "charity-view",
         "event-view"

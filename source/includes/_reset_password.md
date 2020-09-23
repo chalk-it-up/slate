@@ -1,5 +1,5 @@
 ## Reset Password
-The second stage is invoked when the password reset link is clicked and the new details have been submitted.
+The second stage will be invoked when the password reset link is clicked and the new details have been submitted.
  
 ### HTTP Request
 
@@ -25,6 +25,6 @@ TODO
 ```json
 {
   "success": true,
-  "messaage": "The password has been reset"
+  "message": "The password has been reset"
 }
 ```

@@ -16,9 +16,11 @@ includes:
   - login
   - reset_request
   - reset_password
+  - confirm_email
   - general
   - user/0_user
   - user/1_user
+  - user/2_relations
   - charity/0_charity
   - charity/1_charity
   - charity/2_charity

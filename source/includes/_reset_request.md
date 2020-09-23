@@ -14,7 +14,7 @@ TODO
 
 ### HTTP Request
 
-`GET example.com/reset_password_request`
+`POST example.com/reset_password_request`
 
 ### Parameters
 
