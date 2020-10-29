@@ -31,8 +31,9 @@ includes:
   - charity/2_charity
   - school/0_school
   - school/1_school
-  - volunteer/0_volunteer
-  - volunteer/2_volunteer
+  - student/0_student
+  - student/1_student
+  - student/2_student
   - status_codes
 
 search: true
