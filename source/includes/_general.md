@@ -1,10 +1,10 @@
 # General
 
-## Categories
-This endpoint returns a list of categories.
+## Tags
+This endpoint returns a list of tags.
  
 ```shell
-http GET example.com/api/categories
+http GET example.com/api/tags
 ```
 
 ```javascript
@@ -13,7 +13,7 @@ TODO
 
 ### HTTP Request
 
-`GET example.com/api/categories`
+`GET example.com/api/tags`
 
 > The above command returns JSON structured like this (TODO):
 

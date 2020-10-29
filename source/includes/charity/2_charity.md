@@ -1,5 +1,5 @@
 ## Update Charity Details
-This endpoint is used to update the details of a charity.
+This endpoint can be used to update the details of a charity.
 
 ### TODO
 - Normalise charity contacts
