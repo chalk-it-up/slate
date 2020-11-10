@@ -37,5 +37,3 @@ image_data | "_base64_encoded_content_"
     }
 }
 ```
-
-

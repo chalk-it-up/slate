@@ -1,10 +1,5 @@
 ## Get an Image
-This endpoint can be used to get an image.
-
-**Note**
-There could be two variants to this. The first is to simply retrieve the image data using the image id.
-
-The second could be to use the entity_id, and the image_type. 
+This endpoint can be used to get an image using the unique image id.
 
 ```shell
 http GET example.com/api/images/:id
@@ -16,9 +11,25 @@ TODO
 
 ### HTTP Request
 
-`PUT example.com/api/images/87946494654`
+`GET example.com/api/images/87946494654`
 
 ### Parameters
 The path parameter (:id) is the image id
 
-Returns the image data as  binary stream . In this case not JSON.
+> The above command returns JSON structured like below where id is the identity of the image.
+
+```json
+{
+    "success": true,
+    "data": {
+        "id": 88646878580765,
+        "entity_id": 62816468781029,
+        "image_type": "thumbnail",
+        "image_size": 78261,
+        "image_data": "__base64 encoded data__"
+    }
+}
+```
+
+
+

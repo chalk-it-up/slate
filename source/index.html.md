@@ -22,6 +22,7 @@ includes:
   - images/0_add
   - images/1_update
   - images/2_get
+  - images/3_list
   - user/0_user
   - user/1_user
   - user/2_relations
