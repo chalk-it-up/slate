@@ -1,0 +1,28 @@
+<h2 id='list-images-for-an-entity'>List Images for an Entity</h2>
+<p>This endpoint can be used to list the image details for the given entity.</p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/images?entity_id<span class="o">=</span>23863428
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p>`GET example.com/api/images?entity_id=23863428</p>
+
+<blockquote>
+<p>The above command returns JSON structured like below.</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">88646878580765</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"entity_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">62816468781029</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"image_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"thumbnail"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"image_size"</span><span class="p">:</span><span class="w"> </span><span class="mi">2761</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">88646878580789</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"entity_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">62816468781029</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"image_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mugshot"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"image_size"</span><span class="p">:</span><span class="w"> </span><span class="mi">78820</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
