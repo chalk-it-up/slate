@@ -1,0 +1,51 @@
+<h2 id='search-events'>Search Events</h2>
+<p>This endpoint allows for events to be listed across all charities.</p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/TBD?id_province<span class="o">=</span>3&amp;tag<span class="o">=</span>5&amp;offset<span class="o">=</span>0&amp;limit<span class="o">=</span>10
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p><code>GET example.com/api/TBD?id_province=3&amp;tag=5&amp;offset=0&amp;limit=10</code></p>
+<h3 id='parameters'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id_province</td>
+<td>The province to filter by</td>
+</tr>
+<tr>
+<td>tag</td>
+<td>The tag/category to filter by</td>
+</tr>
+<tr>
+<td>offset</td>
+<td>The starting record (for pagination)</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>The number of records to return</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ok"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"event_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">96042210856992</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"event_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Test Event #2"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"charity_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">96042186387470</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"charity_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ekklesia Park"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"recurrence"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Once Off2"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-12-25T16:00:00Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"end_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-12-25T18:00:00Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"capacity"</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>

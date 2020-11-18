@@ -1,0 +1,45 @@
+<h1 id='charity-events'>Charity Events</h1><h2 id='add-charity-event'>Add Charity Event</h2>
+<p>This endpoint can be used to add an event for a charity.</p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http POST example.com/api/charities/2327833979673121796/events
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p><code>POST example.com/api/charities/{charityId}/events</code></p>
+<h3 id='parameters'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>event_name</td>
+<td>The name of the event</td>
+</tr>
+<tr>
+<td>recurrence</td>
+<td>How often the event is hosted</td>
+</tr>
+<tr>
+<td>start_time</td>
+<td>The time that the event starts at</td>
+</tr>
+<tr>
+<td>end_time</td>
+<td>The time that the event ends</td>
+</tr>
+<tr>
+<td>capacity</td>
+<td>The number of attendees possible</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>The above command returns JSON structured like below where id is the identity of the event added.</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"event_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">96042210856992</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
