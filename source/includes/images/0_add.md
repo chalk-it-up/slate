@@ -27,13 +27,13 @@ image_data | "_base64_encoded_content_"
 
 > Image type is flexible but can be used to add multiple images per entity.
 
-> The above command returns JSON structured like below where id is the identity of the images just added.
+> The above command returns JSON structured like below where id is the identity of the image added.
 
 ```json
 {
     "success": true,
     "data": {
-        "id": 88646878580765,
+        "id": 88646878580765
     }
 }
 ```

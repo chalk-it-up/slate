@@ -30,6 +30,11 @@ includes:
   - charity/0_charity
   - charity/1_charity
   - charity/2_charity
+  - charity/event/0_add
+  - charity/event/1_list
+  - charity/event/2_get
+  - charity/event/3_update
+  - charity/event/4_list_all
   - school/0_school
   - school/1_school
   - student/0_student
