@@ -2,7 +2,7 @@
 This endpoint allows for events to be listed across all charities.
  
 ```shell
-http GET example.com/api/TBD?id_province=3&tag=5&offset=0&limit=10
+http GET example.com/api/events?id_province=3&tag=5&offset=0&limit=10
 ```
 
 ```javascript
@@ -11,7 +11,7 @@ TODO
 
 ### HTTP Request
 
-`GET example.com/api/TBD?id_province=3&tag=5&offset=0&limit=10`
+`GET example.com/api/events?id_province=3&tag=5&offset=0&limit=10`
 
 ### Parameters
 

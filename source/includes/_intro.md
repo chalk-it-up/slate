@@ -4,7 +4,7 @@
 All shell commands use `HTTPie` instead of curl but you could use curl if you choose. Syntax will vary slightly.
 
 ## Authentication
-Upon successful logon an authentication token will be returned.
+Upon successful login an authentication token will be returned.
 
 Chalky API expects this authentication token to be present in the header of each request: 
 

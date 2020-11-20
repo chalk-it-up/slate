@@ -2,7 +2,7 @@
 This endpoint returns the details for a single charity event.
  
 ```shell
-http GET example.com/api/charities/96042186387470/events/96042210856992
+http GET example.com/api/events/96042210856992
 ```
 
 ```javascript
@@ -11,7 +11,7 @@ TODO
 
 ### HTTP Request
 
-`GET example.com/api/charities/{charityId}/events/{eventId}`
+`GET example.com/api/events/{eventId}`
 
 > The above command returns JSON structured like this:
 
