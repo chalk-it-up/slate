@@ -464,7 +464,7 @@
         <h1 id='chalky-api-introduction'>Chalky API Introduction</h1><h2 id='introduction'>Introduction</h2>
 <p>All shell commands use <code>HTTPie</code> instead of curl but you could use curl if you choose. Syntax will vary slightly.</p>
 <h2 id='authentication'>Authentication</h2>
-<p>Upon successful logon an authentication token will be returned.</p>
+<p>Upon successful login an authentication token will be returned.</p>
 
 <p>Chalky API expects this authentication token to be present in the header of each request: </p>
 
@@ -1297,10 +1297,10 @@ Image type is flexible but can be used to add multiple images per entity.</p>
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div><h2 id='get-event-details'>Get Event Details</h2>
 <p>This endpoint returns the details for a single charity event.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/charities/96042186387470/events/96042210856992
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/events/96042210856992
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>GET example.com/api/charities/{charityId}/events/{eventId}</code></p>
+<p><code>GET example.com/api/events/{eventId}</code></p>
 
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
@@ -1321,10 +1321,10 @@ Image type is flexible but can be used to add multiple images per entity.</p>
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div><h2 id='update-charity-event'>Update Charity Event</h2>
 <p>This endpoint can be used to update the details of a charity event.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http PUT example.com/api/charities/96042186387470/events/96042210856992
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http PUT example.com/api/events/96042210856992
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>PUT example.com/api/charities/{charityId}/events/{eventId}</code></p>
+<p><code>PUT example.com/api/events/{eventId}</code></p>
 <h3 id='parameters'>Parameters</h3>
 <table><thead>
 <tr>
@@ -1366,10 +1366,10 @@ Image type is flexible but can be used to add multiple images per entity.</p>
 }</p>
 <h2 id='search-events'>Search Events</h2>
 <p>This endpoint allows for events to be listed across all charities.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/TBD?id_province<span class="o">=</span>3&amp;tag<span class="o">=</span>5&amp;offset<span class="o">=</span>0&amp;limit<span class="o">=</span>10
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/events?id_province<span class="o">=</span>3&amp;tag<span class="o">=</span>5&amp;offset<span class="o">=</span>0&amp;limit<span class="o">=</span>10
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>GET example.com/api/TBD?id_province=3&amp;tag=5&amp;offset=0&amp;limit=10</code></p>
+<p><code>GET example.com/api/events?id_province=3&amp;tag=5&amp;offset=0&amp;limit=10</code></p>
 <h3 id='parameters'>Parameters</h3>
 <table><thead>
 <tr>

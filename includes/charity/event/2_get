@@ -1,9 +1,9 @@
 <h2 id='get-event-details'>Get Event Details</h2>
 <p>This endpoint returns the details for a single charity event.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/charities/96042186387470/events/96042210856992
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/events/96042210856992
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>GET example.com/api/charities/{charityId}/events/{eventId}</code></p>
+<p><code>GET example.com/api/events/{eventId}</code></p>
 
 <blockquote>
 <p>The above command returns JSON structured like this:</p>

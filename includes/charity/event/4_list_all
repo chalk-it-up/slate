@@ -1,9 +1,9 @@
 <h2 id='search-events'>Search Events</h2>
 <p>This endpoint allows for events to be listed across all charities.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/TBD?id_province<span class="o">=</span>3&amp;tag<span class="o">=</span>5&amp;offset<span class="o">=</span>0&amp;limit<span class="o">=</span>10
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/events?id_province<span class="o">=</span>3&amp;tag<span class="o">=</span>5&amp;offset<span class="o">=</span>0&amp;limit<span class="o">=</span>10
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>GET example.com/api/TBD?id_province=3&amp;tag=5&amp;offset=0&amp;limit=10</code></p>
+<p><code>GET example.com/api/events?id_province=3&amp;tag=5&amp;offset=0&amp;limit=10</code></p>
 <h3 id='parameters'>Parameters</h3>
 <table><thead>
 <tr>
