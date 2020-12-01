@@ -20,6 +20,18 @@
 <td>How often the event is hosted</td>
 </tr>
 <tr>
+<td>start_date</td>
+<td>The starting date from when the series is valid</td>
+</tr>
+<tr>
+<td>end_date</td>
+<td>The end date after which the event is no longer valid</td>
+</tr>
+<tr>
+<td>days_of_week</td>
+<td>The days of the week that the event is available</td>
+</tr>
+<tr>
 <td>start_time</td>
 <td>The time that the event starts at</td>
 </tr>
