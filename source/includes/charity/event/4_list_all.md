@@ -35,8 +35,11 @@ limit | The number of records to return
             "charity_id": 96042186387470,
             "charity_name": "Ekklesia Park",
             "recurrence": "Once Off2",
-            "start_time": "2020-12-25T16:00:00Z",
-            "end_time": "2020-12-25T18:00:00Z",
+            "start_date": "2020-12-21",
+            "end_date": "2020-12-25",
+            "days_of_week": "YNYNYNN",
+            "start_time": "16:00",
+            "end_time": "18:00",
             "capacity": 15
         }
     ]
