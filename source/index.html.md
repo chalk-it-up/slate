@@ -35,6 +35,11 @@ includes:
   - charity/event/2_get
   - charity/event/3_update
   - charity/event/4_list_all
+  - charity/event/5_list_instances
+  - charity/booking/0_add
+  - charity/booking/1_update
+  - charity/booking/2_get
+  - charity/booking/2_list
   - school/0_school
   - school/1_school
   - student/0_student
