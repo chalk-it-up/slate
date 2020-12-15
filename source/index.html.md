@@ -23,6 +23,10 @@ includes:
   - images/1_update
   - images/2_get
   - images/3_list
+  - config/0_add_config
+  - config/1_list_config
+  - config/2_get_config
+  - config/3_delete_config
   - user/0_user
   - user/1_user
   - user/2_relations
