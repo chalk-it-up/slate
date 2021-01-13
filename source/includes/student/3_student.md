@@ -1,12 +1,8 @@
-# Student
+## Patch Student Details
+This endpoint can be used to update specific attributes of a student.
 
-## Add Student Details
-This endpoint can be used to add a new student.
-
-On successful completion student details will be included in the JSON response.
- 
 ```shell
-http POST example.com/api/students
+http PATCH example.com/api/students/:id
 ```
 
 ```javascript
@@ -15,13 +11,13 @@ TODO
 
 ### HTTP Request
 
-`POST example.com/api/students/`
+`PATCH example.com/api/students/2327833979673121796`
 
 ### Parameters
+Parameters can be any of the following:
 
 Parameter | Description
 --------- | -----------
-parent_id | 88646843863055
 email | "student2@mail.org"
 first_name | "Joe"
 last_name | "Soap"

@@ -1,5 +1,7 @@
 ## Update Student Details
-This endpoint can be used to update the details of a student.
+This endpoint can be used to update all details of a student.
+
+On successful completion student details will be included in the JSON response.
 
 ```shell
 http PUT example.com/api/students/:id
@@ -28,4 +30,3 @@ grade | "6"
 id_type | "P"
 id_number | "456789"
 school_id | 444444
-image_data | "_base64_encoded_content_"

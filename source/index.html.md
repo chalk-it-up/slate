@@ -49,6 +49,7 @@ includes:
   - student/0_student
   - student/1_student
   - student/2_student
+  - student/3_student
   - status_codes
 
 search: true
