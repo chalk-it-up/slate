@@ -1,5 +1,7 @@
 <h2 id='update-student-details'>Update Student Details</h2>
-<p>This endpoint can be used to update the details of a student.</p>
+<p>This endpoint can be used to update all details of a student.</p>
+
+<p>On successful completion student details will be included in the JSON response.</p>
 <div class="highlight"><pre class="highlight shell tab-shell"><code>http PUT example.com/api/students/:id
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
@@ -54,9 +56,5 @@
 <tr>
 <td>school_id</td>
 <td>444444</td>
-</tr>
-<tr>
-<td>image_data</td>
-<td>&quot;<em>base64_encoded_content</em>&quot;</td>
 </tr>
 </tbody></table>
