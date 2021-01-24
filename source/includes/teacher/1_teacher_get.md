@@ -1,8 +1,8 @@
-## Get Student Details
-This endpoint returns the details for a single student.
+## Get Teacher Details
+This endpoint returns the details for a single teacher.
  
 ```shell
-http GET example.com/api/students/:id
+http GET example.com/api/teachers/:id
 ```
 
 ```javascript
@@ -11,7 +11,7 @@ TODO
 
 ### HTTP Request
 
-`GET example.com/api/students/123456`
+`GET example.com/api/teachers/123456`
 
 > The above command returns JSON structured like this:
 
@@ -20,23 +20,22 @@ TODO
     "success": true,
     "message": "Ok",
     "data": {
-        "user_id": 116008415440937,
-        "email": "child2@mail.org",
-        "first_name": "Jane",
-        "last_name": "Soap",
-        "mobile": "0802223333",
-        "date_of_birth": "2010-01-01",
+        "user_id": 119471404773410,
+        "email": "teacher@school.org",
+        "first_name": "Mrs",
+        "last_name": "Teacher",
+        "user_type": "S",
+        "mobile": "",
+        "date_of_birth": "1970-01-01",
         "gender": "F",
-        "grade": "7",
-        "id_type": "P",
-        "id_number": "456789",
+        "id_type": " ",
+        "id_number": "",
         "email_confirmed": false,
         "profile_complete": false,
-        "time_created": "2021-01-13T15:39:47.25217",
-        "last_login_time": null,
+        "time_created": "2021-01-23T10:30:43.547063Z",
+        "last_login_time": "2021-01-23T10:30:48.055674Z",
         "enabled": true,
-        "parent_id": 116008380338202,
-        "school_id": 207681581397679,
+        "school_id": 119471403855875,
         "school_name": "St Stithians Boys' College",
         "images": [
             {

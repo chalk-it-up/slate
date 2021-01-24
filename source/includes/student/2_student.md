@@ -19,7 +19,6 @@ TODO
 
 Parameter | Description
 --------- | -----------
-parent_id | 88646843863055
 email | "student2@mail.org"
 first_name | "Joe"
 last_name | "Soap"
