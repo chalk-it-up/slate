@@ -5,7 +5,7 @@
 <div class="highlight"><pre class="highlight shell tab-shell"><code>http POST example.com/api/students
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>POST example.com/api/students/</code></p>
+<p><code>POST example.com/api/students</code></p>
 <h3 id='parameters'>Parameters</h3>
 <table><thead>
 <tr>
@@ -13,10 +13,6 @@
 <th>Description</th>
 </tr>
 </thead><tbody>
-<tr>
-<td>parent_id</td>
-<td>88646843863055</td>
-</tr>
 <tr>
 <td>email</td>
 <td>&quot;student2@mail.org&quot;</td>
@@ -52,6 +48,10 @@
 <tr>
 <td>id_number</td>
 <td>&quot;456789&quot;</td>
+</tr>
+<tr>
+<td>parent_id</td>
+<td>88646843863055</td>
 </tr>
 <tr>
 <td>school_id</td>
