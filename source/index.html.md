@@ -52,7 +52,7 @@ includes:
   - student/3_student
   - teacher/0_teacher_add
   - teacher/1_teacher_get
-  - teacher/2_teacher_update
+  - teacher/2_teacher_put
   - status_codes
 
 search: true
