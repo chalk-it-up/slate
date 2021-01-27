@@ -50,6 +50,7 @@ includes:
   - student/1_student
   - student/2_student
   - student/3_student
+  - student/4_student
   - teacher/0_teacher_add
   - teacher/1_teacher_get
   - teacher/2_teacher_put
