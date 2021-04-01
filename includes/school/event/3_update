@@ -1,0 +1,73 @@
+<h2 id='update-school-event'>Update School Event</h2>
+<p>This endpoint can be used to update the details of a school event.</p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http PUT example.com/api/schools/143620604850191/events/96042210856992
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p><code>PUT example.com/api/schools/{schoolId}/events/{eventId}</code></p>
+<h3 id='parameters'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>The name of the event</td>
+</tr>
+<tr>
+<td>description</td>
+<td>A longer description of the event</td>
+</tr>
+<tr>
+<td>recurrence</td>
+<td>How often the event is hosted</td>
+</tr>
+<tr>
+<td>start_date</td>
+<td>The starting date from when the series is valid</td>
+</tr>
+<tr>
+<td>end_date</td>
+<td>The end date after which the event is no longer valid</td>
+</tr>
+<tr>
+<td>days_of_week</td>
+<td>The days of the week that the event is available</td>
+</tr>
+<tr>
+<td>start_time</td>
+<td>The time that the event starts at</td>
+</tr>
+<tr>
+<td>end_time</td>
+<td>The time that the event ends</td>
+</tr>
+<tr>
+<td>capacity</td>
+<td>The number of attendees possible</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>The above command returns JSON structured like below.</p>
+</blockquote>
+
+<p>{
+    &quot;success&quot;: true,
+    &quot;message&quot;: &quot;Ok&quot;,
+    &quot;data&quot;: {<br>
+        &quot;event_id&quot;: 143624449953854,
+        &quot;name&quot;: &quot;School Event Name Changed&quot;,
+        &quot;description&quot;: &quot;Longer narrative about the event changed&quot;,
+        &quot;org_id&quot;: 143624423903247,
+        &quot;recurrence&quot;: &quot;Weekly&quot;,
+        &quot;start_date&quot;: &quot;2020-10-01&quot;,
+        &quot;end_date&quot;: &quot;2020-10-30&quot;,
+        &quot;days_of_week&quot;: &quot;NNNNNYN&quot;,
+        &quot;start_time&quot;: &quot;12:00&quot;,
+        &quot;end_time&quot;: &quot;15:00&quot;,
+        &quot;capacity&quot;: 20,
+        &quot;updated_by&quot;: 143624424788026
+    }
+}</p>

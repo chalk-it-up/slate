@@ -1,0 +1,72 @@
+<h1 id='school-events'>School Events</h1><h2 id='add-school-event'>Add School Event</h2>
+<p>This endpoint can be used to add an event for a school.</p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http POST example.com/api/schools/143620604850191/events
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p><code>POST example.com/api/schools/{schoolId}/events</code></p>
+<h3 id='parameters'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>The name of the event</td>
+</tr>
+<tr>
+<td>description</td>
+<td>A longer description of the event</td>
+</tr>
+<tr>
+<td>recurrence</td>
+<td>How often the event is hosted</td>
+</tr>
+<tr>
+<td>start_date</td>
+<td>The starting date from when the series is valid</td>
+</tr>
+<tr>
+<td>end_date</td>
+<td>The end date after which the event is no longer valid</td>
+</tr>
+<tr>
+<td>days_of_week</td>
+<td>The days of the week that the event is available</td>
+</tr>
+<tr>
+<td>start_time</td>
+<td>The time that the event starts at</td>
+</tr>
+<tr>
+<td>end_time</td>
+<td>The time that the event ends</td>
+</tr>
+<tr>
+<td>capacity</td>
+<td>The number of attendees possible</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>The above command returns JSON structured like below where id is the identity of the event added.</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"School Event Name"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Longer narrative about the event"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"org_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">143622650753039</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"recurrence"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Weekly"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-10-01"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-10-30"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"days_of_week"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NNNNNYN"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12:00"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"end_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"14:00"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"capacity"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"updated_by"</span><span class="p">:</span><span class="w"> </span><span class="mi">143622651637818</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"event_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">143622675918910</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
