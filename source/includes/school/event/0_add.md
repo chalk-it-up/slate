@@ -1,11 +1,11 @@
-# Charity Events
+# School Events
 
-## Add Charity Event
-This endpoint can be used to add an event for a charity.
+## Add School Event
+This endpoint can be used to add an event for a school.
 
 
 ```shell
-http POST example.com/api/charities/2327833979673121796/events
+http POST example.com/api/schools/143620604850191/events
 ```
 
 ```javascript
@@ -14,7 +14,7 @@ TODO
 
 ### HTTP Request
 
-`POST example.com/api/charities/{charity_id}/events`
+`POST example.com/api/schools/{schoolId}/events`
 
 ### Parameters
 
@@ -36,7 +36,18 @@ capacity | The number of attendees possible
 {
     "success": true,
     "data": {
-        "event_id": 96042210856992
+        "name": "School Event Name",
+        "description": "Longer narrative about the event",
+        "org_id": 143622650753039,
+        "recurrence": "Weekly",
+        "start_date": "2020-10-01",
+        "end_date": "2020-10-30",
+        "days_of_week": "NNNNNYN",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "capacity": 10,
+        "updated_by": 143622651637818,
+        "event_id": 143622675918910
     }
 }
 ```
