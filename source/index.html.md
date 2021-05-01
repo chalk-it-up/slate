@@ -50,14 +50,15 @@ includes:
   - school/event/1_list
   - school/event/2_get
   - school/event/3_update
-  - student/0_student
-  - student/1_student
-  - student/2_student
-  - student/3_student
-  - student/4_student
+  - student/0_add
+  - student/1_get
+  - student/2_update
+  - student/3_patch
+  - student/4_events
   - teacher/0_teacher_add
   - teacher/1_teacher_get
   - teacher/2_teacher_put
+  - event/0_search
   - status_codes
 
 search: true

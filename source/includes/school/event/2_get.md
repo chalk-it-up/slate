@@ -28,8 +28,10 @@ TODO
         "org_type": "S",
         "recurrence": "Weekly",
         "start_date": "2020-10-01",
-        "days_of_week": "NNNNNYN",
         "end_date": "2020-10-30",
+        "days_of_week": [
+          "sat"
+        ],
         "start_time": "12:00",
         "end_time": "15:00",
         "capacity": 20,

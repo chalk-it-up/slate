@@ -25,7 +25,7 @@ description | A longer description of the event
 recurrence | How often the event is hosted
 start_date | The starting date from when the series is valid
 end_date | The end date after which the event is no longer valid
-days_of_week | The days of the week that the event is available
+days_of_week | The days of the week that the event is available. A list where values are ("mon", "tue", "wed", "thu", "fri", "sat", "sun")
 start_time | The time that the event starts at
 end_time | The time that the event ends
 capacity | The number of attendees possible

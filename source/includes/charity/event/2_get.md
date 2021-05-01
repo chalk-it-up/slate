@@ -27,7 +27,11 @@ TODO
         "recurrence": "Once Off",
         "start_date": "2020-12-21",
         "end_date": "2020-12-25",
-        "days_of_week": "YNYNYNN",
+        "days_of_week": [
+          "mon",
+          "wed",
+          "fri"
+        ],
         "start_time": "16:00",
         "end_time": "18:00",
         "capacity": 10
