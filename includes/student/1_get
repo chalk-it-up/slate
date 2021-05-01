@@ -1,0 +1,47 @@
+<h2 id='get-student-details'>Get Student Details</h2>
+<p>This endpoint returns the details for a single student.</p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/students/:id
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p><code>GET example.com/api/students/123456</code></p>
+
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ok"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">116008415440937</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"child2@mail.org"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jane"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Soap"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"mobile"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0802223333"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"date_of_birth"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2010-01-01"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"gender"</span><span class="p">:</span><span class="w"> </span><span class="s2">"F"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"grade"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"id_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"P"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"id_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"456789"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"email_confirmed"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"profile_complete"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"time_created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-01-13T15:39:47.25217"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"last_login_time"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">116008380338202</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"school_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">207681581397679</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"school_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"St Stithians Boys' College"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"image_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">116008417529898</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"image_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"banner"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"image_size"</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"image_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">116008417570859</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"image_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"thumbnail"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"image_size"</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>

@@ -16,6 +16,10 @@
 <td>The id of the event to be booked</td>
 </tr>
 <tr>
+<td>event_date</td>
+<td>The date of the event to be booked</td>
+</tr>
+<tr>
 <td>user_id</td>
 <td>The user id booking the event</td>
 </tr>
