@@ -1,0 +1,94 @@
+<h1 id='charity'>Charity</h1><h2 id='add-new-charity'>Add New Charity</h2>
+<p>This endpoint can be used to add a new charity organisation.</p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http POST example.com/api/charities
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p><code>POST example.com/api/charities</code></p>
+<h3 id='parameters'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>The name of the charity</td>
+</tr>
+<tr>
+<td>description</td>
+<td>A longer description of the charity</td>
+</tr>
+<tr>
+<td>about_us</td>
+<td>An extra field to explain the purpose of the charity</td>
+</tr>
+<tr>
+<td>street</td>
+<td>The street number and name</td>
+</tr>
+<tr>
+<td>suburb</td>
+<td>The name of the suburb</td>
+</tr>
+<tr>
+<td>city</td>
+<td>The name of the city</td>
+</tr>
+<tr>
+<td>province_id</td>
+<td>The id from the list of provinces</td>
+</tr>
+<tr>
+<td>email</td>
+<td>The general email</td>
+</tr>
+<tr>
+<td>telephone</td>
+<td>The main telephone number</td>
+</tr>
+<tr>
+<td>website</td>
+<td>The website of the charity</td>
+</tr>
+<tr>
+<td>registration_number</td>
+<td>the NGO or similar (needs verification)</td>
+</tr>
+<tr>
+<td>gps_coords</td>
+<td>Used for exact location</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>A list of tag names used to categorise charities (fixed list)</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>The above command returns JSON structured like below where id is the identity of the event added.</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ok"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">163680840699975</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Test Charity"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Charity Description"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"about_us"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Something about us"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"street"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1 The Lane"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"suburb"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Suburbia"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Johannesburg"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"province_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"charity@mail.org"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"telephone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0112223333"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"website"</span><span class="p">:</span><span class="w"> </span><span class="s2">"www.oursite.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"gps_coords"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-26.012, 27.994"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"Animals"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Community"</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="err">```</span><span class="w">
+</span></code></pre></div>

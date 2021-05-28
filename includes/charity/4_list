@@ -1,0 +1,57 @@
+<h2 id='get-all-charities'>Get All Charities</h2>
+<p>This endpoint returns a list of all charities.</p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/charities
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p><code>GET example.com/api/charities?province_id=3&amp;tag=Animals&amp;offset=0&amp;limit=10</code></p>
+<h3 id='request-parameters'>Request Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id_province</td>
+<td>The province to filter by</td>
+</tr>
+<tr>
+<td>tag</td>
+<td>The tag/category to filter by</td>
+</tr>
+<tr>
+<td>offset</td>
+<td>The starting record (for pagination)</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>The number of records to return</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">163699236958234</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ann Harding Cheshire Home"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"suburb"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Northwold"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Randburg"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"Disability"</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">163699236950038</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ark Animal Centre ? Puppy Shelter"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"suburb"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Chartwell"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Johannesburg"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"Animals"</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
