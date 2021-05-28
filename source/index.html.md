@@ -31,9 +31,11 @@ includes:
   - user/1_user
   - user/2_relations
   - user/3_update_password
-  - charity/0_charity
-  - charity/1_charity
-  - charity/2_charity
+  - charity/0_add
+  - charity/1_get
+  - charity/2_update
+  - charity/3_patch
+  - charity/4_list
   - charity/event/0_add
   - charity/event/1_list
   - charity/event/2_get
