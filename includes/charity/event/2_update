@@ -1,9 +1,9 @@
-<h1 id='charity-events'>Charity Events</h1><h2 id='add-charity-event'>Add Charity Event</h2>
-<p>This endpoint can be used to add an event for a charity.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http POST example.com/api/events
+<h2 id='update-charity-event'>Update Charity Event</h2>
+<p>This endpoint can be used to update the details of a charity event.</p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http PUT example.com/api/events/96042210856992
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>POST example.com/api/events</code></p>
+<p><code>PUT example.com/api/events/{id}</code></p>
 <h3 id='parameters'>Parameters</h3>
 <table><thead>
 <tr>
@@ -12,16 +12,16 @@
 </tr>
 </thead><tbody>
 <tr>
-<td>name</td>
+<td>org_id</td>
+<td>The organisation (charity) that the event is linked to</td>
+</tr>
+<tr>
+<td>event_name</td>
 <td>The name of the event</td>
 </tr>
 <tr>
 <td>description</td>
 <td>A longer description of the event</td>
-</tr>
-<tr>
-<td>org_id</td>
-<td>The organisation (charity) that the event is linked to</td>
 </tr>
 <tr>
 <td>recurrence</td>
@@ -62,12 +62,14 @@
 </tbody></table>
 
 <blockquote>
-<p>The above command returns JSON structured like below where id is the identity of the event added.</p>
+<p>The above command returns JSON structured like below.</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
     </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Test Event"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ok"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">       
+      </span><span class="nl">"event_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">164118033510471</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Test Event #2"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Longer text about event"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"org_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">164118011572252</span><span class="p">,</span><span class="w">
       </span><span class="nl">"recurrence"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Weekly"</span><span class="p">,</span><span class="w">
@@ -85,12 +87,11 @@
       </span><span class="nl">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16:00"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"end_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"17:00"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"booking_closes"</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"capacity"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"capacity"</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="p">,</span><span class="w">
       </span><span class="nl">"updated_by"</span><span class="p">:</span><span class="w"> </span><span class="mi">164118012424256</span><span class="p">,</span><span class="w">
       </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="s2">"Sport"</span><span class="w">
-      </span><span class="p">],</span><span class="w">
-      </span><span class="nl">"event_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">164118033510471</span><span class="w">
-    </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>

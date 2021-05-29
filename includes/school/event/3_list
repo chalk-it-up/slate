@@ -1,0 +1,79 @@
+<h2 id='get-all-events-for-a-school'>Get All Events for a School</h2>
+<p>This endpoint returns a list of events associated with a school.</p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/events?org_id<span class="o">=</span>143624423903247
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p><code>GET example.com/api/events?org_id={id}</code></p>
+
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ok"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"event_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">164125131657265</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"School Cleanup"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"If you are not doing any sport then come along and help tidy up school grounds"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"org_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">164125131157521</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"org_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"St Stithians Boys' College"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"org_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"S"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"recurrence"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Weekly"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-06-01"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-12-31"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"days_of_week"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"Monday"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"Tuesday"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"Wednesday"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"Thursday"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"Friday"</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"14:00"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"end_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"15:00"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"booking_closes"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"capacity"</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"slots_booked"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"slots_available"</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"street"</span><span class="p">:</span><span class="w"> </span><span class="s2">"40 Peter Place"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"suburb"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lyme Park"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sandton"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"province"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Gauteng"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"info@stithian.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"telephone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"011 577 6000"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"website"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.stithian.com/"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"gps_coords"</span><span class="p">:</span><span class="w"> </span><span class="s2">"W299+47 Sandton"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"image_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">164125131673650</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"image_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"thumbnail"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"image_size"</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"event_dates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"2021-05-31"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"2021-06-01"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"2021-06-02"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"2021-06-03"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"2021-06-04"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"2021-06-07"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"2021-06-08"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"2021-06-09"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"2021-06-10"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"2021-06-11"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"2021-06-14"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"2021-06-15"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"2021-06-16"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"2021-06-17"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"2021-06-18"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"2021-06-21"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"2021-06-22"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"2021-06-23"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"2021-06-24"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"2021-06-25"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"2021-06-28"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>

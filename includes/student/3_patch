@@ -1,6 +1,6 @@
 <h2 id='patch-student-details'>Patch Student Details</h2>
 <p>This endpoint can be used to update specific attributes of a student.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http PATCH example.com/api/students/:id
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http PATCH example.com/api/students/<span class="o">{</span><span class="nb">id</span><span class="o">}</span>
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
 <p><code>PATCH example.com/api/students/2327833979673121796</code></p>

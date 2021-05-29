@@ -1,11 +1,11 @@
 <h2 id='update-an-image'>Update an Image</h2>
 <p>This endpoint can be used to add an image for an entity.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http PUT example.com/api/images/:id
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http PUT example.com/api/images/<span class="o">{</span><span class="nb">id</span><span class="o">}</span>
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
 <p><code>PUT example.com/api/images/87946494654</code></p>
 <h3 id='parameters'>Parameters</h3>
-<p>The path parameter (:id) is the image id</p>
+<p>The path parameter ({id}) is the image id</p>
 
 <table><thead>
 <tr>

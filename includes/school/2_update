@@ -1,9 +1,9 @@
 <h2 id='update-school-details'>Update School Details</h2>
 <p>This endpoint can be used to update the details of a school.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http PUT example.com/api/schools/:id
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http PUT example.com/api/schools/<span class="o">{</span><span class="nb">id</span><span class="o">}</span>
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>PUT example.com/api/charities/2327833979673121796</code></p>
+<p><code>PUT example.com/api/schools/2327833979673121796</code></p>
 <h3 id='parameters'>Parameters</h3>
 <table><thead>
 <tr>

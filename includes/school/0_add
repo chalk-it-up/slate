@@ -13,15 +13,15 @@
 </thead><tbody>
 <tr>
 <td>name</td>
-<td>The name of the charity</td>
+<td>The name of the school</td>
 </tr>
 <tr>
 <td>description</td>
-<td>A longer description of the charity</td>
+<td>A longer description of the school</td>
 </tr>
 <tr>
 <td>about_us</td>
-<td>An extra field to explain the purpose of the charity</td>
+<td>An extra field to explain the purpose of the school</td>
 </tr>
 <tr>
 <td>street</td>
@@ -49,7 +49,7 @@
 </tr>
 <tr>
 <td>website</td>
-<td>The website of the charity</td>
+<td>The website of the school</td>
 </tr>
 <tr>
 <td>gps_coords</td>

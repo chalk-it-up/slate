@@ -1,0 +1,91 @@
+<h2 id='update-school-event'>Update School Event</h2>
+<p>This endpoint can be used to update the details of a school event.</p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http PUT example.com/api/events/143620604850191
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p><code>PUT example.com/api/events/{id}</code></p>
+<h3 id='parameters'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>The name of the event</td>
+</tr>
+<tr>
+<td>description</td>
+<td>A longer description of the event</td>
+</tr>
+<tr>
+<td>org_id</td>
+<td>The organisation (school) that the event is linked to</td>
+</tr>
+<tr>
+<td>recurrence</td>
+<td>How often the event is hosted</td>
+</tr>
+<tr>
+<td>start_date</td>
+<td>The starting date from when the series is valid</td>
+</tr>
+<tr>
+<td>end_date</td>
+<td>The end date after which the event is no longer valid</td>
+</tr>
+<tr>
+<td>days_of_week</td>
+<td>The days of the week that the event is available</td>
+</tr>
+<tr>
+<td>start_time</td>
+<td>The time that the event starts at</td>
+</tr>
+<tr>
+<td>end_time</td>
+<td>The time that the event ends</td>
+</tr>
+<tr>
+<td>capacity</td>
+<td>The number of attendees possible</td>
+</tr>
+<tr>
+<td>booking_closes</td>
+<td>The time in minutes before the event that booking closes</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>A list of tags associated with the event</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>The above command returns JSON structured like below.</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ok"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">       
+      </span><span class="nl">"event_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">164125152636999</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"School Event Name Changed"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Longer narrative about the event changed"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"org_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">164125131157521</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"recurrence"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Weekly"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-06-01"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-06-30"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"days_of_week"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"Saturday"</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12:00"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"end_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"15:00"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"booking_closes"</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"capacity"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"updated_by"</span><span class="p">:</span><span class="w"> </span><span class="mi">164125132058690</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"Community"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>

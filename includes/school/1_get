@@ -1,6 +1,6 @@
 <h2 id='get-one-school'>Get One School</h2>
 <p>This endpoint returns the details for a selected school.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/schools/:id
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/schools/<span class="o">{</span><span class="nb">id</span><span class="o">}</span>
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
 <p><code>GET example.com/api/schools/2076815814010344533</code></p>
