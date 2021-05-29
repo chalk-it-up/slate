@@ -37,9 +37,9 @@ includes:
   - charity/3_patch
   - charity/4_list
   - charity/event/0_add
-  - charity/event/1_list
-  - charity/event/2_get
-  - charity/event/3_update
+  - charity/event/1_get
+  - charity/event/2_update
+  - charity/event/3_list
   - charity/event/4_list_all
   - charity/event/5_list_instances
   - charity/booking/0_add
