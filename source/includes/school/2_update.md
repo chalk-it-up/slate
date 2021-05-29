@@ -2,7 +2,7 @@
 This endpoint can be used to update the details of a school.
 
 ```shell
-http PUT example.com/api/schools/:id
+http PUT example.com/api/schools/{id}
 ```
 
 ```javascript
@@ -11,7 +11,7 @@ TODO
 
 ### HTTP Request
 
-`PUT example.com/api/charities/2327833979673121796`
+`PUT example.com/api/schools/2327833979673121796`
 
 ### Parameters
 

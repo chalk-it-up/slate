@@ -2,7 +2,7 @@
 This endpoint can be used to get an image using the unique image id.
 
 ```shell
-http GET example.com/api/images/:id
+http GET example.com/api/images/{id}
 ```
 
 ```javascript
@@ -14,7 +14,7 @@ TODO
 `GET example.com/api/images/87946494654`
 
 ### Parameters
-The path parameter (:id) is the image id
+The path parameter ({id}) is the image id
 
 > The above command returns JSON structured like below where id is the identity of the image.
 

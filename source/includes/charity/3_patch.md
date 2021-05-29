@@ -2,7 +2,7 @@
 This endpoint can be used to update specific attributes of a charity.
  
 ```shell
-http PATCH example.com/api/charities/:id
+http PATCH example.com/api/charities/{id}
 ```
 
 ```javascript

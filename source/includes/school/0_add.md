@@ -3,7 +3,6 @@
 ## Add New School
 This endpoint can be used to add a new school.
 
-
 ```shell
 http POST example.com/api/schools
 ```
@@ -20,16 +19,16 @@ TODO
 
 Parameter | Description
 --------- | -----------
-name | The name of the charity
-description | A longer description of the charity
-about_us | An extra field to explain the purpose of the charity
+name | The name of the school
+description | A longer description of the school
+about_us | An extra field to explain the purpose of the school
 street | The street number and name
 suburb | The name of the suburb
 city | The name of the city
 province_id | The id from the list of provinces
 email | The general email
 telephone | The main telephone number
-website | The website of the charity
+website | The website of the school
 gps_coords | Used for exact location
 
 > The above command returns JSON structured like below where id is the identity of the event added.

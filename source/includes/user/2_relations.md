@@ -4,7 +4,7 @@
 This endpoint returns the relationships of the parent user.
  
 ```shell
-http GET example.com/api/users/:id/relations
+http GET example.com/api/users/{id}/relations
 ```
 
 ```javascript
@@ -13,7 +13,7 @@ TODO
 
 ### HTTP Request
 
-`GET example.com/api/users/:id/relations`
+`GET example.com/api/users/{id}/relations`
 
 > The above command returns JSON structured like this:
 

@@ -3,7 +3,7 @@ Here a user can reset their own password assuming they are already authenticated
  
 ### HTTP Request
 
-`PUT example.com/api/users/:id/password`
+`PUT example.com/api/users/{id}/password`
 
 ### Parameters
 
@@ -15,7 +15,7 @@ new_password | The new password requested by the user
 The frontend UI should have two fields to confirm that new password matches in both.
 
 ```shell
-http PUT example.com/api/users/:id/password current_password=OldSecret new_password=NewSecret
+http PUT example.com/api/users/{id}/password current_password=OldSecret new_password=NewSecret
 ```
 
 ```javascript

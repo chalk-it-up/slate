@@ -52,9 +52,9 @@ includes:
   - school/3_patch
   - school/4_list
   - school/event/0_add
-  - school/event/1_list
-  - school/event/2_get
-  - school/event/3_update
+  - school/event/1_get
+  - school/event/2_update
+  - school/event/3_list
   - student/0_add
   - student/1_get
   - student/2_update

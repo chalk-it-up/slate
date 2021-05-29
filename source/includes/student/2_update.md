@@ -4,7 +4,7 @@ This endpoint can be used to update all details of a student.
 On successful completion student details will be included in the JSON response.
 
 ```shell
-http PUT example.com/api/students/:id
+http PUT example.com/api/students/{id}
 ```
 
 ```javascript

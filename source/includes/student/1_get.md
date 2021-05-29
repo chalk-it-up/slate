@@ -2,7 +2,7 @@
 This endpoint returns the details for a single student.
  
 ```shell
-http GET example.com/api/students/:id
+http GET example.com/api/students/{id}
 ```
 
 ```javascript

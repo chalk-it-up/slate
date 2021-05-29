@@ -2,7 +2,7 @@
 This endpoint can be used to update the details of a charity.
 
 ```shell
-http PUT example.com/api/charities/:id
+http PUT example.com/api/charities/{id}
 ```
 
 ```javascript

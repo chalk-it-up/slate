@@ -2,7 +2,7 @@
 This endpoint can be used to add an image for an entity.
  
 ```shell
-http PUT example.com/api/images/:id
+http PUT example.com/api/images/{id}
 ```
 
 ```javascript
@@ -14,7 +14,7 @@ TODO
 `PUT example.com/api/images/87946494654`
 
 ### Parameters
-The path parameter (:id) is the image id
+The path parameter ({id}) is the image id
 
 Parameter | Description
 --------- | -----------

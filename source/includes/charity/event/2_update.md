@@ -1,10 +1,8 @@
-# Charity Events
-
-## Add Charity Event
-This endpoint can be used to add an event for a charity.
+## Update Charity Event
+This endpoint can be used to update the details of a charity event.
 
 ```shell
-http POST example.com/api/events
+http PUT example.com/api/events/96042210856992
 ```
 
 ```javascript
@@ -13,15 +11,15 @@ TODO
 
 ### HTTP Request
 
-`POST example.com/api/events`
+`PUT example.com/api/events/{id}`
 
 ### Parameters
 
 Parameter | Description
 --------- | -----------
-name | The name of the event
-description | A longer description of the event
 org_id | The organisation (charity) that the event is linked to
+event_name | The name of the event
+description | A longer description of the event
 recurrence | How often the event is hosted
 start_date | The starting date from when the series is valid
 end_date | The end date after which the event is no longer valid
@@ -32,13 +30,15 @@ capacity | The number of attendees possible
 booking_closes | The time in minutes before the event that booking closes
 tags | A list of tags associated with the event
 
-> The above command returns JSON structured like below where id is the identity of the event added.
+> The above command returns JSON structured like below.
 
 ```json
 {
     "success": true,
-    "data": {
-      "name": "Test Event",
+    "message": "Ok",
+    "data": {       
+      "event_id": 164118033510471,
+      "name": "Test Event #2",
       "description": "Longer text about event",
       "org_id": 164118011572252,
       "recurrence": "Weekly",
@@ -56,12 +56,11 @@ tags | A list of tags associated with the event
       "start_time": "16:00",
       "end_time": "17:00",
       "booking_closes": 60,
-      "capacity": 10,
+      "capacity": 15,
       "updated_by": 164118012424256,
       "tags": [
         "Sport"
-      ],
-      "event_id": 164118033510471
-    }
+      ]
+  }
 }
 ```

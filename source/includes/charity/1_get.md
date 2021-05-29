@@ -2,7 +2,7 @@
 This endpoint returns the details for a single charity.
  
 ```shell
-http GET example.com/api/charities/:id
+http GET example.com/api/charities/{id}
 ```
 
 ```javascript

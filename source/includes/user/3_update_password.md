@@ -5,7 +5,7 @@ Can only be called for the authenticated user.
  
 ### HTTP Request
 
-`POST example.com/api/users/:id/password`
+`POST example.com/api/users/{id}/password`
 
 ### Parameters
 

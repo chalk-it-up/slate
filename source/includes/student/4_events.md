@@ -2,7 +2,7 @@
 This endpoint can be used to list the events booked by a student.
 
 ```shell
-http GET example.com/api/students/:id/events
+http GET example.com/api/students/{id}/events
 ```
 
 ```javascript

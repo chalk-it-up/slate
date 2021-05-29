@@ -4,7 +4,7 @@
 This endpoint returns useful information pertaining to the specified user.
  
 ```shell
-http GET example.com/api/users/:id
+http GET example.com/api/users/{id}
 ```
 
 ```javascript
@@ -13,7 +13,7 @@ TODO
 
 ### HTTP Request
 
-`GET example.com/api/users/:id`
+`GET example.com/api/users/{id}`
 
 > The above command returns JSON structured like this:
 

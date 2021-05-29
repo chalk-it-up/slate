@@ -2,7 +2,7 @@
 This endpoint can be used to update specific attributes of a school.
  
 ```shell
-http PATCH example.com/api/schools/:id
+http PATCH example.com/api/schools/{id}
 ```
 
 ```javascript

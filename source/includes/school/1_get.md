@@ -2,7 +2,7 @@
 This endpoint returns the details for a selected school.
 
 ```shell
-http GET example.com/api/schools/:id
+http GET example.com/api/schools/{id}
 ```
 
 ```javascript
