@@ -1,8 +1,6 @@
 ## Get One School
 This endpoint returns the details for a selected school.
 
-This needs improvement and contacts normalised.
- 
 ```shell
 http GET example.com/api/schools/:id
 ```

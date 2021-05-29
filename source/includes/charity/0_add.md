@@ -1,4 +1,4 @@
-# Charity
+# Charities
 
 ## Add New Charity
 This endpoint can be used to add a new charity organisation.
