@@ -1,4 +1,4 @@
-<h1 id='charity'>Charity</h1><h2 id='add-new-charity'>Add New Charity</h2>
+<h1 id='charities'>Charities</h1><h2 id='add-new-charity'>Add New Charity</h2>
 <p>This endpoint can be used to add a new charity organisation.</p>
 <div class="highlight"><pre class="highlight shell tab-shell"><code>http POST example.com/api/charities
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>

@@ -1,0 +1,62 @@
+<h2 id='update-school-details'>Update School Details</h2>
+<p>This endpoint can be used to update the details of a school.</p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http PUT example.com/api/schools/:id
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p><code>PUT example.com/api/charities/2327833979673121796</code></p>
+<h3 id='parameters'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>The id of the school to change</td>
+</tr>
+<tr>
+<td>name</td>
+<td>The name of the school</td>
+</tr>
+<tr>
+<td>description</td>
+<td>A longer description of the school</td>
+</tr>
+<tr>
+<td>about_us</td>
+<td>An extra field to explain the purpose of the school</td>
+</tr>
+<tr>
+<td>street</td>
+<td>The street number and name</td>
+</tr>
+<tr>
+<td>suburb</td>
+<td>The name of the suburb</td>
+</tr>
+<tr>
+<td>city</td>
+<td>The name of the city</td>
+</tr>
+<tr>
+<td>province_id</td>
+<td>The id from the list of provinces</td>
+</tr>
+<tr>
+<td>email</td>
+<td>The general email</td>
+</tr>
+<tr>
+<td>telephone</td>
+<td>The main telephone number</td>
+</tr>
+<tr>
+<td>website</td>
+<td>The website of the school</td>
+</tr>
+<tr>
+<td>gps_coords</td>
+<td>Used for exact location</td>
+</tr>
+</tbody></table>
