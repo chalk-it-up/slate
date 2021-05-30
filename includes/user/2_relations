@@ -1,4 +1,4 @@
-<h1 id='user'>User</h1><h2 id='user-relations'>User Relations</h2>
+<h2 id='user-relations'>User Relations</h2>
 <p>This endpoint returns the relationships of the parent user.</p>
 <div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/users/<span class="o">{</span><span class="nb">id</span><span class="o">}</span>/relations
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>

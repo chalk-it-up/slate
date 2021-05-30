@@ -1,0 +1,41 @@
+<h2 id='get-event-booking-details'>Get Event Booking Details</h2>
+<p>This endpoint returns the details for an event booking.</p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/bookings/96042210856992
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p><code>GET example.com/api/bookings/{id}</code></p>
+
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ok"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"booking_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">164352822956110</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"org_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">164352800968728</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"org_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ark Animal Centre &amp; Puppy Shelter"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"street"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2 Park Ln"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"suburb"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Blairgowrie,"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Randburg"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"province_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"event_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">101174887313442</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Test Event"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Longer text about event"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16:00"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"end_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"17:00"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">164352801927242</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Joe"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Soap"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"child1@mail.org"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"user_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"S"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"event_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-05-30"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Booked"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Booking comments.."</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+        </span><span class="nl">"updated_by"</span><span class="p">:</span><span class="w"> </span><span class="mi">101174865891358</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"updated_by_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"John Doe"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"updated_by_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"charity@mail.org"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
