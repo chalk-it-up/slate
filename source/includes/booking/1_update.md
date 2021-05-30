@@ -24,6 +24,11 @@ comments | Any comments that are associated with the booking
 
 ```json
 {
-    "success": true
-}
+  "success": true,
+  "message": "Ok",
+  "data": {
+    "booking_id": 164352822956110,
+    "comments": "Booking comments Updated",
+    "updated_by": 164352801927242
+  }}
 ```

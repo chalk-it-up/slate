@@ -1,5 +1,5 @@
 ## Get Event Details
-This endpoint returns the details for a single charity event.
+This endpoint returns the details for a single event.
  
 ```shell
 http GET example.com/api/events/96042210856992
@@ -26,6 +26,7 @@ TODO
       "org_id": 164118011572252,
       "org_name": "Ekklesia Park",
       "org_type": "C",
+      "active": true,
       "recurrence": "Weekly",
       "start_date": "2021-05-29",
       "end_date": "2021-06-05",

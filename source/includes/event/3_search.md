@@ -1,5 +1,3 @@
-# Events
-
 ## Searching for Events
 This endpoint is used to search for events across all charities and schools.
 
@@ -19,6 +17,7 @@ TODO
 
 Parameter | Description
 --------- | -----------
+org_id | Filters events to a single organisation (used when listing for charities or schools) 
 province_id | Filters events to a single province (should always be used)
 tag | Only return events matching the given tag
 day | Filter events to a specified day of the week (E.g. "fri")

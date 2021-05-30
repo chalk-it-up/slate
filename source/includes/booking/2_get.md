@@ -1,5 +1,5 @@
 ## Get Event Booking Details
-This endpoint returns the details for a single charity event booking.
+This endpoint returns the details for an event booking.
  
 ```shell
 http GET example.com/api/bookings/96042210856992
@@ -20,24 +20,27 @@ TODO
     "success": true,
     "message": "Ok",
     "data": {
-        "booking_id": 101174887903267,
-        "charity_id": 101174865088526,
-        "charity_name": "Ekklesia Park",
+        "booking_id": 164352822956110,
+        "org_id": 164352800968728,
+        "org_name": "Ark Animal Centre & Puppy Shelter",
         "street": "2 Park Ln",
         "suburb": "Blairgowrie,",
         "city": "Randburg",
         "province_id": 3,
         "event_id": 101174887313442,
-        "event_name": "Test Event",
+        "name": "Test Event",
+        "description": "Longer text about event",
         "start_time": "16:00",
         "end_time": "17:00",
-        "user_id": 101174865891358,
-        "first_name": "John",
-        "last_name": "Doe",
-        "email": "charity@mail.org",
-        "user_type": "C",
-        "status": "B",
+        "user_id": 164352801927242,
+        "first_name": "Joe",
+        "last_name": "Soap",
+        "email": "child1@mail.org",
+        "user_type": "S",
+        "event_date": "2021-05-30",
+        "status": "Booked",
         "comments": "Booking comments..",
+        "images": [],
         "updated_by": 101174865891358,
         "updated_by_name": "John Doe",
         "updated_by_email": "charity@mail.org"

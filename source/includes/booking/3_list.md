@@ -26,7 +26,7 @@ TODO
             "first_name": "John",
             "last_name": "Doe",
             "email": "charity@mail.org",
-            "status": "B",
+            "status": "Booked",
             "comments": "Booking comments"
         }
     ]

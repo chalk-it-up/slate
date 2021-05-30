@@ -1,8 +1,8 @@
-## Update School Event
-This endpoint can be used to update the details of a school event.
+## Update Event Details
+This endpoint can be used to update the details of an event.
 
 ```shell
-http PUT example.com/api/events/143620604850191
+http PUT example.com/api/events/96042210856992
 ```
 
 ```javascript
@@ -17,9 +17,9 @@ TODO
 
 Parameter | Description
 --------- | -----------
-name | The name of the event
+org_id | The organisation that the event is linked to
+event_name | The name of the event
 description | A longer description of the event
-org_id | The organisation (school) that the event is linked to
 recurrence | How often the event is hosted
 start_date | The starting date from when the series is valid
 end_date | The end date after which the event is no longer valid
@@ -37,24 +37,30 @@ tags | A list of tags associated with the event
     "success": true,
     "message": "Ok",
     "data": {       
-      "event_id": 164125152636999,
-      "name": "School Event Name Changed",
-      "description": "Longer narrative about the event changed",
-      "org_id": 164125131157521,
+      "event_id": 164118033510471,
+      "name": "Test Event #2",
+      "description": "Longer text about event",
+      "org_id": 164118011572252,
       "recurrence": "Weekly",
-      "start_date": "2021-06-01",
-      "end_date": "2021-06-30",
+      "start_date": "2021-05-29",
+      "end_date": "2021-06-05",
       "days_of_week": [
-        "Saturday"
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
       ],
-      "start_time": "12:00",
-      "end_time": "15:00",
+      "start_time": "16:00",
+      "end_time": "17:00",
       "booking_closes": 60,
-      "capacity": 20,
-      "updated_by": 164125132058690,
+      "capacity": 15,
+      "updated_by": 164118012424256,
       "tags": [
-        "Community"
+        "Sport"
       ]
-    }
+  }
 }
 ```

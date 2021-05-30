@@ -1,5 +1,3 @@
-# User
-
 ## User Relations
 This endpoint returns the relationships of the parent user.
  

@@ -1,7 +1,7 @@
-# Charity Event Bookings
+# Event Bookings
 
-## Book Event 
-This endpoint can be used to book a charity event.
+## Book an Event 
+This endpoint can be used to book an event.
 
 
 ```shell
@@ -20,7 +20,6 @@ TODO
 
 Parameter | Description
 --------- | -----------
-event_id | The id of the event to be booked
 event_date | The date of the event to be booked
 user_id | The user id booking the event
 comments | Any comments that are associated with the booking

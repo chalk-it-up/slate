@@ -27,8 +27,8 @@ includes:
   - config/1_list_config
   - config/2_get_config
   - config/3_delete_config
-  - user/0_user
-  - user/1_user
+  - user/0_get
+  - user/1_update
   - user/2_relations
   - user/3_update_password
   - charity/0_add
@@ -36,25 +36,11 @@ includes:
   - charity/2_update
   - charity/3_patch
   - charity/4_list
-  - charity/event/0_add
-  - charity/event/1_get
-  - charity/event/2_update
-  - charity/event/3_list
-  - charity/event/4_list_all
-  - charity/event/5_list_instances
-  - charity/booking/0_add
-  - charity/booking/1_update
-  - charity/booking/2_get
-  - charity/booking/3_list
   - school/0_add
   - school/1_get
   - school/2_update
   - school/3_patch
   - school/4_list
-  - school/event/0_add
-  - school/event/1_get
-  - school/event/2_update
-  - school/event/3_list
   - student/0_add
   - student/1_get
   - student/2_update
@@ -63,7 +49,17 @@ includes:
   - teacher/0_teacher_add
   - teacher/1_teacher_get
   - teacher/2_teacher_put
-  - event/0_search
+  - event/0_add
+  - event/1_get
+  - event/2_update
+  - event/3_search
+  - event/4_list_instances
+  - booking/0_add
+  - booking/1_update
+  - booking/2_get
+  - booking/3_list
+  - booking/4_cancel
+  - booking/5_complete
   - status_codes
 
 search: true
