@@ -1,4 +1,4 @@
-<h1 id='teacher'>Teacher</h1><h2 id='add-teacher'>Add Teacher</h2>
+<h1 id='teachers'>Teachers</h1><h2 id='add-teacher'>Add Teacher</h2>
 <p>This endpoint can be used to add a new teacher.</p>
 
 <p>On successful completion teacher details will be included in the JSON response.</p>

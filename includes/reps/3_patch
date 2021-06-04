@@ -1,22 +1,18 @@
-<h1 id='students'>Students</h1><h2 id='add-student-details'>Add Student Details</h2>
-<p>This endpoint can be used to add a new student.</p>
-
-<p>On successful completion student details will be included in the JSON response.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http POST example.com/api/students
+<h2 id='patch-charity-rep-details'>Patch Charity Rep Details</h2>
+<p>This endpoint can be used to update specific attributes of a charity representative.</p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http PATCH example.com/api/reps/<span class="o">{</span><span class="nb">id</span><span class="o">}</span>
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>POST example.com/api/students</code></p>
+<p><code>PATCH example.com/api/reps/166133281919052</code></p>
 <h3 id='parameters'>Parameters</h3>
+<p>Parameters can be any of the following:</p>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
-<tr>
-<td>email</td>
-<td>&quot;student2@mail.org&quot;</td>
-</tr>
 <tr>
 <td>first_name</td>
 <td>&quot;Joe&quot;</td>
@@ -38,23 +34,11 @@
 <td>&quot;M&quot;</td>
 </tr>
 <tr>
-<td>grade</td>
-<td>&quot;6&quot;</td>
-</tr>
-<tr>
 <td>id_type</td>
 <td>&quot;P&quot;</td>
 </tr>
 <tr>
 <td>id_number</td>
 <td>&quot;456789&quot;</td>
-</tr>
-<tr>
-<td>parent_id</td>
-<td>88646843863055</td>
-</tr>
-<tr>
-<td>school_id</td>
-<td>444444</td>
 </tr>
 </tbody></table>

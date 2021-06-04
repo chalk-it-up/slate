@@ -1,0 +1,34 @@
+<h2 id='get-charity-rep-details'>Get Charity Rep Details</h2>
+<p>This endpoint returns the details for a single charity representative.</p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/reps/<span class="o">{</span><span class="nb">id</span><span class="o">}</span>
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
+</code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p><code>GET example.com/api/reps/123456</code></p>
+
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ok"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">166133281919052</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"charity2@mail.org"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"user_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"C"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Harder"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Worker"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"mobile"</span><span class="p">:</span><span class="w"> </span><span class="s2">"08512345657"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"date_of_birth"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2011-02-03"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"gender"</span><span class="p">:</span><span class="w"> </span><span class="s2">"M"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"id_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"P"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"id_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"908075"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"email_confirmed"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"profile_complete"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"time_created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-06-04T06:58:23.481378Z"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"charity_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">166133256908824</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"charity_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ark Animal Centre ? Puppy Shelter"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
