@@ -1,4 +1,4 @@
-# Student
+# Students
 
 ## Add Student Details
 This endpoint can be used to add a new student.

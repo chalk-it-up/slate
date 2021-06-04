@@ -1,4 +1,4 @@
-# Teacher
+# Teachers
 
 ## Add Teacher
 This endpoint can be used to add a new teacher.

@@ -41,6 +41,11 @@ includes:
   - school/2_update
   - school/3_patch
   - school/4_list
+  - reps/0_add
+  - reps/1_get
+  - reps/2_update
+  - reps/3_patch
+  - reps/4_list
   - student/0_add
   - student/1_get
   - student/2_update
