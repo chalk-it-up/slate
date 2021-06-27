@@ -28,9 +28,11 @@ comments | Any comments that are associated with the booking
 
 ```json
 {
-    "success": true,
-    "data": {
-        "booking_id": 96042210856992
-    }
+  "success": true,
+  "data": {
+    "event_date": "2021-06-28",
+    "comments": "Booking comments Updated",
+    "booking_id": 96042210856992
+  }
 }
 ```

@@ -18,6 +18,7 @@ TODO
 
 Parameter | Description
 --------- | -----------
+event_date | The date of the event to be booked
 comments | Any comments that are associated with the booking
 
 > The above command returns JSON structured like below where id is the identity of the event added.
@@ -28,6 +29,7 @@ comments | Any comments that are associated with the booking
   "message": "Ok",
   "data": {
     "booking_id": 164352822956110,
+    "event_date": "2021-06-28",
     "comments": "Booking comments Updated",
     "updated_by": 164352801927242
   }}

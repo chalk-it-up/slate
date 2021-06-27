@@ -25,8 +25,19 @@ month | Only return events available in a given month (Numeric values from 1 - 1
 year | Will default to current year if not specified (E.g. 2021)
 date_from | Used to restrict events to a date range (E.g. "2021-12-01")
 date_to | Used to restrict events to a date range (E.g. "2021-12-31")
-offset | The starting record (for pagination)
-limit | The number of records to return
+page | The required page number (starting at zero)
+page_size | The number of rows to return per page
+
+### Response Parameters
+
+Parameter | Description
+--------- | -----------
+page | The required page number (starting at zero)
+page_size | The number of rows to return per page
+pages | The total number of pages
+previous_page | The number of the previous page or null if page is the first page 
+next_page | The number of the next page or null if page is the last page 
+total_rows | The number of events on all pages 
 
 > The above command returns JSON structured like this:
 
@@ -34,53 +45,56 @@ limit | The number of records to return
 {
     "success": true,
     "message": "Ok",
-    "data": [
-      {
-        "event_id": 154169665400879,
-        "name": "School Cleanup",
-        "description": "If you are not doing any sport then come along and help tidy up school grounds",
-        "org_id": 154169664901135,
-        "org_name": "St Stithians Boys' College",
-        "org_type": "S",
-        "recurrence": "Weekly",
-        "start_date": "2020-06-01",
-        "end_date": "2021-12-31",
-        "days_of_week": [
-          "mon",
-          "tue",
-          "wed",
-          "thu",
-          "fri"
-        ],
-        "start_time": "14:00",
-        "end_time": "15:00",
-        "capacity": 100,
-        "street": "40 Peter Place",
-        "suburb": "Lyme Park",
-        "city": "Sandton",
-        "email": "info@stithian.com",
-        "telephone": "011 577 6000",
-        "website": "https://www.stithian.com/",
-        "gps_coords": "W299+47 Sandton",
-        "images": [
-          {
-            "image_id": 154169665425456,
-            "image_type": "thumbnail",
-            "image_size": 60
-          }
-        ],
-        "event_dates": [
-          "2021-05-03",
-          "2021-05-04",
-          "2021-05-05",
-          "2021-05-06",
-          "2021-05-07",
-          "2021-05-10",
-          "2021-05-11",
-          "2021-05-12",
-        ]
-      },
-    ]
+    "data": {
+      "page": 0,
+      "page_size": 4,
+      "pages": 2,
+      "next_page": 1,
+      "total_rows": 7,
+      "events": [
+        {
+          "event_id": 174015022755890,
+          "name": "Animal Care",
+          "description": "Come and spend an afternoon with our animals, feed the puppies and help to clean their living quarters",
+          "org_id": 174015022247960,
+          "org_name": "Ark Animal Centre ? Puppy Shelter",
+          "org_type": "C",
+          "recurrence": "Weekly",
+          "start_date": "2021-06-01",
+          "end_date": "2022-12-31",
+          "days_of_week": [
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "start_time": "14:00:00",
+          "end_time": "16:00:00",
+          "booking_closes": 60,
+          "capacity": 50,
+          "street": "17 Howard Avenue",
+          "suburb": "Chartwell",
+          "city": "Johannesburg",
+          "province": "Gauteng",
+          "email": "info@arkanimalcentre.co.za",
+          "telephone": "087 742 2211",
+          "website": "http://www.arkanimalcentre.co.za/",
+          "registration_number": "930053318",
+          "gps_coords": "2W8W+5J",
+          "tags": [
+            "Animals"
+          ],
+          "images": [
+            {
+              "image_id": 174015022772276,
+              "image_type": "thumbnail",
+              "image_size": 60
+            }
+          ],
+          "event_date": "2021-06-30",
+          "coalesce": 0
+        }
+      ]
+    }
 }
 ```
 
