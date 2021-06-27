@@ -44,12 +44,44 @@
 <td>Used to restrict events to a date range (E.g. &quot;2021-12-31&quot;)</td>
 </tr>
 <tr>
-<td>offset</td>
-<td>The starting record (for pagination)</td>
+<td>page</td>
+<td>The required page number (starting at zero)</td>
 </tr>
 <tr>
-<td>limit</td>
-<td>The number of records to return</td>
+<td>page_size</td>
+<td>The number of rows to return per page</td>
+</tr>
+</tbody></table>
+<h3 id='response-parameters'>Response Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>page</td>
+<td>The required page number (starting at zero)</td>
+</tr>
+<tr>
+<td>page_size</td>
+<td>The number of rows to return per page</td>
+</tr>
+<tr>
+<td>pages</td>
+<td>The total number of pages</td>
+</tr>
+<tr>
+<td>previous_page</td>
+<td>The number of the previous page or null if page is the first page</td>
+</tr>
+<tr>
+<td>next_page</td>
+<td>The number of the next page or null if page is the last page</td>
+</tr>
+<tr>
+<td>total_rows</td>
+<td>The number of events on all pages</td>
 </tr>
 </tbody></table>
 
@@ -59,52 +91,55 @@
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
     </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
     </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ok"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"event_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">154169665400879</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"School Cleanup"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"If you are not doing any sport then come along and help tidy up school grounds"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"org_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">154169664901135</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"org_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"St Stithians Boys' College"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"org_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"S"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"recurrence"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Weekly"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-06-01"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-12-31"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"days_of_week"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-          </span><span class="s2">"mon"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"tue"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"wed"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"thu"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"fri"</span><span class="w">
-        </span><span class="p">],</span><span class="w">
-        </span><span class="nl">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"14:00"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"end_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"15:00"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"capacity"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"street"</span><span class="p">:</span><span class="w"> </span><span class="s2">"40 Peter Place"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"suburb"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lyme Park"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sandton"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"info@stithian.com"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"telephone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"011 577 6000"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"website"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.stithian.com/"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"gps_coords"</span><span class="p">:</span><span class="w"> </span><span class="s2">"W299+47 Sandton"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-          </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"image_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">154169665425456</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"image_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"thumbnail"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"image_size"</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="w">
-          </span><span class="p">}</span><span class="w">
-        </span><span class="p">],</span><span class="w">
-        </span><span class="nl">"event_dates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-          </span><span class="s2">"2021-05-03"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"2021-05-04"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"2021-05-05"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"2021-05-06"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"2021-05-07"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"2021-05-10"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"2021-05-11"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"2021-05-12"</span><span class="p">,</span><span class="w">
-        </span><span class="p">]</span><span class="w">
-      </span><span class="p">},</span><span class="w">
-    </span><span class="p">]</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"page"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"page_size"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"pages"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"next_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"total_rows"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"events"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"event_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">174015022755890</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Animal Care"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Come and spend an afternoon with our animals, feed the puppies and help to clean their living quarters"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"org_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">174015022247960</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"org_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ark Animal Centre ? Puppy Shelter"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"org_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"C"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"recurrence"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Weekly"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-06-01"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-12-31"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"days_of_week"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"Wednesday"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Thursday"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Friday"</span><span class="w">
+          </span><span class="p">],</span><span class="w">
+          </span><span class="nl">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"14:00:00"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"end_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16:00:00"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"booking_closes"</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"capacity"</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"street"</span><span class="p">:</span><span class="w"> </span><span class="s2">"17 Howard Avenue"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"suburb"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Chartwell"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Johannesburg"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"province"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Gauteng"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"info@arkanimalcentre.co.za"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"telephone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"087 742 2211"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"website"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.arkanimalcentre.co.za/"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"930053318"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"gps_coords"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2W8W+5J"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"Animals"</span><span class="w">
+          </span><span class="p">],</span><span class="w">
+          </span><span class="nl">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"image_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">174015022772276</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"image_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"thumbnail"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"image_size"</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">],</span><span class="w">
+          </span><span class="nl">"event_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-06-30"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"coalesce"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>

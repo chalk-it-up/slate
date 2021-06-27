@@ -1,9 +1,9 @@
-<h2 id='list-event-instances'>List Event Instances</h2>
-<p>This endpoint allows for event instances to be listed.</p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/events/816546547/instances?offset<span class="o">=</span>0&amp;limit<span class="o">=</span>10
+<h2 id='list-event-entries'>List Event Entries</h2>
+<p>This endpoint allows for event entries to be listed.</p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http GET example.com/api/events/816546547/instances
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
-<p><code>GET example.com/api/events/{id}/instances?offset=0&amp;limit=10</code></p>
+<p>`GET example.com/api/events/{id}/instances</p>
 <h3 id='parameters'>Parameters</h3>
 <table><thead>
 <tr>
@@ -12,12 +12,52 @@
 </tr>
 </thead><tbody>
 <tr>
-<td>offset</td>
-<td>The starting record (for pagination)</td>
+<td>date_from</td>
+<td>Used to restrict events to a date range (E.g. &quot;2021-12-01&quot;)</td>
 </tr>
 <tr>
-<td>limit</td>
-<td>The number of records to return</td>
+<td>date_to</td>
+<td>Used to restrict events to a date range (E.g. &quot;2021-12-31&quot;)</td>
+</tr>
+<tr>
+<td>page</td>
+<td>The required page number (starting at zero)</td>
+</tr>
+<tr>
+<td>page_size</td>
+<td>The number of rows to return per page</td>
+</tr>
+</tbody></table>
+<h3 id='response-parameters'>Response Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>page</td>
+<td>The required page number (starting at zero)</td>
+</tr>
+<tr>
+<td>page_size</td>
+<td>The number of rows to return per page</td>
+</tr>
+<tr>
+<td>pages</td>
+<td>The total number of pages</td>
+</tr>
+<tr>
+<td>previous_page</td>
+<td>The number of the previous page or null if page is the first page</td>
+</tr>
+<tr>
+<td>next_page</td>
+<td>The number of the next page or null if page is the last page</td>
+</tr>
+<tr>
+<td>total_rows</td>
+<td>The number of event entries on all pages</td>
 </tr>
 </tbody></table>
 
@@ -27,10 +67,24 @@
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
     </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
     </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ok"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w"> </span><span class="nl">"event_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-12-21"</span><span class="w"> </span><span class="p">},</span><span class="w">
-        </span><span class="p">{</span><span class="w"> </span><span class="nl">"event_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-12-23"</span><span class="w"> </span><span class="p">},</span><span class="w">
-        </span><span class="p">{</span><span class="w"> </span><span class="nl">"event_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-12-25"</span><span class="w"> </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"page"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"page_size"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"pages"</span><span class="p">:</span><span class="w"> </span><span class="mi">83</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"next_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"total_rows"</span><span class="p">:</span><span class="w"> </span><span class="mi">415</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"event_entries"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"event_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-06-01"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"slots_booked"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"slots_available"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"event_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-06-02"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"slots_booked"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"slots_available"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
