@@ -3,7 +3,7 @@ This endpoint can be used to update an event booking comments.
 
 
 ```shell
-http PUT example.com/api/bookings/101174887903267
+http PATCH example.com/api/bookings/101174887903267
 ```
 
 ```javascript
@@ -12,7 +12,7 @@ TODO
 
 ### HTTP Request
 
-`POST example.com/api/bookings/{id}`
+`PATCH example.com/api/bookings/{id}`
 
 ### Parameters
 
@@ -29,8 +29,9 @@ comments | Any comments that are associated with the booking
   "message": "Ok",
   "data": {
     "booking_id": 164352822956110,
-    "event_date": "2021-06-28",
     "comments": "Booking comments Updated",
+    "event_date": "2021-06-28",
+    "status": "Booked",
     "updated_by": 164352801927242
   }}
 ```
