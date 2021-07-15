@@ -71,6 +71,9 @@ total_rows | The number of events on all pages
           "end_time": "16:00:00",
           "booking_closes": 60,
           "capacity": 50,
+          "event_date": "2021-07-15",
+          "slots_booked": 0,
+          "slots_available": 50,
           "street": "17 Howard Avenue",
           "suburb": "Chartwell",
           "city": "Johannesburg",
@@ -89,9 +92,7 @@ total_rows | The number of events on all pages
               "image_type": "thumbnail",
               "image_size": 60
             }
-          ],
-          "event_date": "2021-06-30",
-          "coalesce": 0
+          ]
         }
       ]
     }

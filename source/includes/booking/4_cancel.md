@@ -1,8 +1,6 @@
 ## Cancel Event Booking
 This endpoint allows an event booking to be cancelled.
 
-I still need to send notifications to student and parent
-
 ```shell
 http PATCH example.com/api/bookings/164352822259788
 ```

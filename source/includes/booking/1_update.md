@@ -1,5 +1,5 @@
 ## Update Event Booking 
-This endpoint can be used to update an event booking comments.
+This endpoint can be used to move a booking to a new date or to update an event booking comments.
 
 
 ```shell
@@ -15,6 +15,7 @@ TODO
 `PATCH example.com/api/bookings/{id}`
 
 ### Parameters
+The following request parameters are optional.
 
 Parameter | Description
 --------- | -----------

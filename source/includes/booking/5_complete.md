@@ -1,10 +1,6 @@
 ## Complete Event Booking
-This endpoint allows an event booking to be completed.
+This endpoint allows an event booking to be completed by the student after the event has been attended.
 
-This handler needs work on the validation:
-- cannot complete until the event is over
-
-I also still need to send notifications to student, parent and organisation
 
 ```shell
 http PATCH example.com/api/bookings/164352822259788
