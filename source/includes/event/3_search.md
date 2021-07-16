@@ -13,13 +13,15 @@ TODO
 
 `GET example.com/api/events`
 
+`GET example.com/api/events?tags=Animals&tags=Environment`
+
 ### Parameters
 
 Parameter | Description
 --------- | -----------
 org_id | Filters events to a single organisation (used when listing for charities or schools) 
 province_id | Filters events to a single province (should always be used)
-tag | Only return events matching the given tag
+tags | Only return events matching the given tag names
 day | Filter events to a specified day of the week (E.g. "fri")
 month | Only return events available in a given month (Numeric values from 1 - 12)
 year | Will default to current year if not specified (E.g. 2021)
