@@ -2759,6 +2759,8 @@ additional name used to group entries together.</p>
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">TODO</span>
 </code></pre></div><h3 id='http-request'>HTTP Request</h3>
 <p><code>GET example.com/api/events</code></p>
+
+<p><code>GET example.com/api/events?tags=Animals&amp;tags=Environment</code></p>
 <h3 id='parameters'>Parameters</h3>
 <table><thead>
 <tr>
@@ -2775,8 +2777,8 @@ additional name used to group entries together.</p>
 <td>Filters events to a single province (should always be used)</td>
 </tr>
 <tr>
-<td>tag</td>
-<td>Only return events matching the given tag</td>
+<td>tags</td>
+<td>Only return events matching the given tag names</td>
 </tr>
 <tr>
 <td>day</td>
